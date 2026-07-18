@@ -115,7 +115,7 @@ The repository includes a plain 12-point Times New Roman, double-spaced, continu
 
 - [`manuscript/audience_calibrated_medical_safety_JAMIA.docx`](manuscript/audience_calibrated_medical_safety_JAMIA.docx)
 - [`manuscript/audience_calibrated_medical_safety_JAMIA.pdf`](manuscript/audience_calibrated_medical_safety_JAMIA.pdf)
-- [`submission/JAMIA/figures/`](submission/JAMIA/figures/) contains four RGB, LZW-compressed TIFF files at 300 dpi and a SHA-256 upload manifest.
+- [`submission/JAMIA/figures/`](https://github.com/KAVentures/audience-calibrated-medical-llm-safety/tree/main/submission/JAMIA/figures) contains four RGB, LZW-compressed TIFF files at 300 dpi and a SHA-256 upload manifest.
 
 Title-page metadata: running title **Evaluator-dependent medical LLM safety**; main-text word count **3,732**; keywords **large language models; artificial intelligence; patient safety; medical informatics; reproducibility**.
 
@@ -150,4 +150,3 @@ Kinvectum AB, a healthcare consultancy and technology company, funded the study.
 ## License
 
 Code is released under the [MIT License](LICENSE). The manuscript, original figures, and original tables are released under [CC BY 4.0](LICENSE-CONTENT.md). Third-party source material retains its original terms.
-
