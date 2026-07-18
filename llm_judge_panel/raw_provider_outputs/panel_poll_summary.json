@@ -1,0 +1,50 @@
+{
+  "judges": {
+    "gpt_5_5": {
+      "batch_id": "batch_6a5b480f1bb88190a90d3d0e99b616c9",
+      "complete": false,
+      "status": {
+        "cancelled_at": null,
+        "cancelling_at": null,
+        "completed_at": null,
+        "completion_window": "24h",
+        "created_at": 1784367119,
+        "endpoint": "/v1/responses",
+        "error_file_id": null,
+        "errors": null,
+        "expired_at": null,
+        "expires_at": 1784453519,
+        "failed_at": null,
+        "finalizing_at": null,
+        "id": "batch_6a5b480f1bb88190a90d3d0e99b616c9",
+        "in_progress_at": 1784367183,
+        "input_file_id": "file-4hgV8CFdqJquL71aiVcc4c",
+        "metadata": {
+          "role": "llm_judge",
+          "study": "audience_calibrated_medical_safety"
+        },
+        "model": "gpt-5.5-2026-04-23",
+        "object": "batch",
+        "output_file_id": null,
+        "request_counts": {
+          "completed": 1291,
+          "failed": 0,
+          "total": 1320
+        },
+        "status": "in_progress",
+        "usage": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "cached_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 0
+        }
+      }
+    }
+  },
+  "polled_at_utc": "2026-07-18T10:22:38.182745+00:00"
+}

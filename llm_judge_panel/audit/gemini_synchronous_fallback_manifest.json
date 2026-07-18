@@ -1,0 +1,17 @@
+{
+  "fallback_count": 9,
+  "opaque_ids": [
+    "J000157",
+    "J000423",
+    "J000745",
+    "J000780",
+    "J000994",
+    "J001173",
+    "J001204",
+    "J001219",
+    "J001235"
+  ],
+  "provider": "gemini",
+  "reason": "technical completion after batch stall, truncation, or provider filter",
+  "run_at_utc": "2026-07-18T10:57:20.651591+00:00"
+}

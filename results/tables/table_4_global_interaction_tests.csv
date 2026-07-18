@@ -1,0 +1,5 @@
+converged,n,events,wald_chi2,df,p_value,formula,family,covariance,rater_stream,outcome,p_value_holm
+True,1200,7,1.8199959467910958,6,0.9354867606293068,unsafe_binary ~ C(model_key) * C(prompt_version),binomial,exchangeable; topic-clustered robust SE,chatgpt,unsafe_binary,1.0
+True,1200,21,1.8872328379615837,6,0.9297719876636664,evidence_insufficient_or_overanswered ~ C(model_key) * C(prompt_version),binomial,exchangeable; topic-clustered robust SE,chatgpt,evidence_insufficient_or_overanswered,1.0
+True,1200,256,35.65912062984739,6,3.2106568256450897e-06,unsafe_binary ~ C(model_key) * C(prompt_version),binomial,exchangeable; topic-clustered robust SE,claude,unsafe_binary,6.421313651290179e-06
+True,1200,57,10.61713106211121,6,0.10095507389054963,evidence_insufficient_or_overanswered ~ C(model_key) * C(prompt_version),binomial,exchangeable; topic-clustered robust SE,claude,evidence_insufficient_or_overanswered,0.10095507389054963

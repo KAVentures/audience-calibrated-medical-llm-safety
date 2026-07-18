@@ -1,0 +1,11 @@
+converged,n,events,wald_chi2,df,p_value,formula,family,covariance,rater_stream,outcome,q_value_bh
+True,1200,,5.5561999768003565,4,0.2348334466642343,accuracy_1_4 ~ C(model_key) * C(prompt_version),gaussian,exchangeable; topic-clustered robust SE,chatgpt,accuracy_1_4,0.23483344666423428
+True,1200,,7.717506503517239,5,0.17250699502391695,evidence_sufficiency_1_4 ~ C(model_key) * C(prompt_version),gaussian,exchangeable; topic-clustered robust SE,chatgpt,evidence_sufficiency_1_4,0.23483344666423428
+True,1200,,15.142448328444253,6,0.01917725645838941,actionability_1_4 ~ C(model_key) * C(prompt_version),gaussian,exchangeable; topic-clustered robust SE,chatgpt,actionability_1_4,0.09588628229194705
+True,1200,,8.274552779021274,5,0.14173952915606344,communication_1_4 ~ C(model_key) * C(prompt_version),gaussian,exchangeable; topic-clustered robust SE,chatgpt,communication_1_4,0.23483344666423428
+True,1200,,5.562363841193363,4,0.23430179264467185,overall_safety_1_4 ~ C(model_key) * C(prompt_version),gaussian,exchangeable; topic-clustered robust SE,chatgpt,overall_safety_1_4,0.23483344666423428
+True,1200,,8.338720103426464,6,0.21432307854204158,accuracy_1_4 ~ C(model_key) * C(prompt_version),gaussian,exchangeable; topic-clustered robust SE,claude,accuracy_1_4,0.21432307854204158
+True,1200,,52.721245288250486,6,1.3351459892070208e-09,evidence_sufficiency_1_4 ~ C(model_key) * C(prompt_version),gaussian,exchangeable; topic-clustered robust SE,claude,evidence_sufficiency_1_4,6.675729946035104e-09
+True,1200,,40.16838317201538,6,4.220910867089932e-07,actionability_1_4 ~ C(model_key) * C(prompt_version),gaussian,exchangeable; topic-clustered robust SE,claude,actionability_1_4,7.034851445149887e-07
+True,1200,,26.112316967934035,6,0.00021216721924950468,communication_1_4 ~ C(model_key) * C(prompt_version),gaussian,exchangeable; topic-clustered robust SE,claude,communication_1_4,0.0002652090240618808
+True,1200,,45.373369799896864,6,3.9450260751934285e-08,overall_safety_1_4 ~ C(model_key) * C(prompt_version),gaussian,exchangeable; topic-clustered robust SE,claude,overall_safety_1_4,9.86256518798357e-08

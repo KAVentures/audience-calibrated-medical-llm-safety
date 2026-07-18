@@ -1,0 +1,11 @@
+.DS_Store
+.venv/
+__pycache__/
+*.py[cod]
+.cache/
+.matplotlib-cache/
+qa/
+*.inspect.ndjson
+API_KEYS*
+*.local.*
+

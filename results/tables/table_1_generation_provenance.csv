@@ -1,0 +1,5 @@
+model_key,n,first_created_utc,last_created_utc,requested_model_id,returned_model_id,requested_reasoning,sent_reasoning,requested_temperature,sent_temperature,regenerated
+claude_4_8_opus,300,2026-07-09T01:46:17.104680+00:00,2026-07-14T17:56:34.320787+00:00,claude-opus-4-8,claude-opus-4-8; not_recorded_original_run,high_where_available,omitted_or_provider_default,0,omitted_unsupported_or_deprecated,27
+gemini_3_5_flash,300,2026-07-09T01:15:24.673390+00:00,2026-07-14T18:30:25.410851+00:00,gemini-3.5-flash,gemini-3.5-flash; not_recorded_original_run,high_where_available,omitted_or_provider_default,0,0,271
+gpt_5_5,300,2026-07-08T23:17:35.257365+00:00,2026-07-14T18:30:54.934071+00:00,gpt-5.5,gpt-5.5-2026-04-23; not_recorded_original_run,high_where_available,high; reasoning.effort=high,0,omitted_unsupported_or_deprecated,148
+grok_4_3,300,2026-07-08T22:31:55.070430+00:00,2026-07-09T03:22:14.917929+00:00,grok-4.3,not_recorded_original_run,high_where_available,omitted_or_provider_default,0,0,0

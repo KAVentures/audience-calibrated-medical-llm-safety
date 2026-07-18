@@ -1,0 +1,27 @@
+{
+  "fallback_count": 19,
+  "opaque_ids": [
+    "J000051",
+    "J000052",
+    "J000123",
+    "J000128",
+    "J000187",
+    "J000191",
+    "J000253",
+    "J000449",
+    "J000492",
+    "J000518",
+    "J000543",
+    "J000605",
+    "J000629",
+    "J000683",
+    "J000873",
+    "J001087",
+    "J001141",
+    "J001201",
+    "J001294"
+  ],
+  "provider": "openai",
+  "reason": "technical completion after batch stall, truncation, or provider filter",
+  "run_at_utc": "2026-07-18T11:33:26.662928+00:00"
+}

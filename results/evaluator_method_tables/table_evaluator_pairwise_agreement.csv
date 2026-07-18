@@ -1,0 +1,31 @@
+outcome,outcome_label,method_a,method_a_label,method_b,method_b_label,n,a_positive,b_positive,exact_agreement,cohen_kappa,gwet_ac1
+unsafe_binary,Unsafe,judge_grok_4_3,Grok 4.3 judge,judge_gpt_5_5,GPT-5.5 judge,1200,0,18,0.985,0.0,0.9847733126927127
+evidence_failure,Evidence-sufficiency failure,judge_grok_4_3,Grok 4.3 judge,judge_gpt_5_5,GPT-5.5 judge,1200,18,51,0.9675,0.42196531791907643,0.9655776175077534
+unsafe_binary,Unsafe,judge_grok_4_3,Grok 4.3 judge,judge_gemini_3_5_flash,Gemini 3.5 Flash judge,1200,0,4,0.9966666666666667,0.0,0.9966555370371403
+evidence_failure,Evidence-sufficiency failure,judge_grok_4_3,Grok 4.3 judge,judge_gemini_3_5_flash,Gemini 3.5 Flash judge,1200,18,13,0.9925,0.7059784384188208,0.9923037482527549
+unsafe_binary,Unsafe,judge_grok_4_3,Grok 4.3 judge,judge_claude_4_8_opus,Claude Opus 4.8 judge,1200,0,3,0.9975,0.0,0.9974937421875245
+evidence_failure,Evidence-sufficiency failure,judge_grok_4_3,Grok 4.3 judge,judge_claude_4_8_opus,Claude Opus 4.8 judge,1200,18,20,0.9883333333333333,0.6256684491978609,0.9879580423790894
+unsafe_binary,Unsafe,judge_grok_4_3,Grok 4.3 judge,gpt_5_6_holistic,GPT-5.6 holistic,1200,0,7,0.9941666666666666,0.0,0.9941325396429022
+evidence_failure,Evidence-sufficiency failure,judge_grok_4_3,Grok 4.3 judge,gpt_5_6_holistic,GPT-5.6 holistic,1200,18,21,0.9841666666666666,0.5048214751107605,0.9836437259161934
+unsafe_binary,Unsafe,judge_grok_4_3,Grok 4.3 judge,deterministic_engine,Deterministic scoring engine,1200,0,256,0.7866666666666666,0.0,0.7364375137272128
+evidence_failure,Evidence-sufficiency failure,judge_grok_4_3,Grok 4.3 judge,deterministic_engine,Deterministic scoring engine,1200,18,57,0.9425,0.05853458862054843,0.9387941787941788
+unsafe_binary,Unsafe,judge_gpt_5_5,GPT-5.5 judge,judge_gemini_3_5_flash,Gemini 3.5 Flash judge,1200,18,4,0.9866666666666667,0.2687385740402204,0.9864199818650174
+evidence_failure,Evidence-sufficiency failure,judge_gpt_5_5,GPT-5.5 judge,judge_gemini_3_5_flash,Gemini 3.5 Flash judge,1200,51,13,0.9633333333333334,0.30042133714921887,0.9613257078567411
+unsafe_binary,Unsafe,judge_gpt_5_5,GPT-5.5 judge,judge_claude_4_8_opus,Claude Opus 4.8 judge,1200,18,3,0.9858333333333333,0.18699186991869546,0.9855832477338667
+evidence_failure,Evidence-sufficiency failure,judge_gpt_5_5,GPT-5.5 judge,judge_claude_4_8_opus,Claude Opus 4.8 judge,1200,51,20,0.9625,0.35064935064935193,0.9602157338668355
+unsafe_binary,Unsafe,judge_gpt_5_5,GPT-5.5 judge,gpt_5_6_holistic,GPT-5.6 holistic,1200,18,7,0.9858333333333333,0.31423961274707574,0.9855351207622424
+evidence_failure,Evidence-sufficiency failure,judge_gpt_5_5,GPT-5.5 judge,gpt_5_6_holistic,GPT-5.6 holistic,1200,51,21,0.9616666666666667,0.3448693299152587,0.9592977985417994
+unsafe_binary,Unsafe,judge_gpt_5_5,GPT-5.5 judge,deterministic_engine,Deterministic scoring engine,1200,18,256,0.79,0.05376990087113303,0.7367545950425598
+evidence_failure,Evidence-sufficiency failure,judge_gpt_5_5,GPT-5.5 judge,deterministic_engine,Deterministic scoring engine,1200,51,57,0.915,0.011196742765741896,0.9070072753131667
+unsafe_binary,Unsafe,judge_gemini_3_5_flash,Gemini 3.5 Flash judge,judge_claude_4_8_opus,Claude Opus 4.8 judge,1200,4,3,0.9958333333333333,0.28366762177648264,0.9958089568877873
+evidence_failure,Evidence-sufficiency failure,judge_gemini_3_5_flash,Gemini 3.5 Flash judge,judge_claude_4_8_opus,Claude Opus 4.8 judge,1200,13,20,0.9891666666666666,0.6008188331627443,0.9888646552379484
+unsafe_binary,Unsafe,judge_gemini_3_5_flash,Gemini 3.5 Flash judge,gpt_5_6_holistic,GPT-5.6 holistic,1200,4,7,0.9941666666666666,0.3609251369446079,0.9941129493738176
+evidence_failure,Evidence-sufficiency failure,judge_gemini_3_5_flash,Gemini 3.5 Flash judge,gpt_5_6_holistic,GPT-5.6 holistic,1200,13,21,0.9866666666666667,0.5230287673274725,0.9862835392469378
+unsafe_binary,Unsafe,judge_gemini_3_5_flash,Gemini 3.5 Flash judge,deterministic_engine,Deterministic scoring engine,1200,4,256,0.7883333333333333,0.016621928556679804,0.7376484765019797
+evidence_failure,Evidence-sufficiency failure,judge_gemini_3_5_flash,Gemini 3.5 Flash judge,deterministic_engine,Deterministic scoring engine,1200,13,57,0.945,0.04020940885624944,0.9416982590452353
+unsafe_binary,Unsafe,judge_claude_4_8_opus,Claude Opus 4.8 judge,gpt_5_6_holistic,GPT-5.6 holistic,1200,3,7,0.9966666666666667,0.5985950827897629,0.9966387731522006
+evidence_failure,Evidence-sufficiency failure,judge_claude_4_8_opus,Claude Opus 4.8 judge,gpt_5_6_holistic,GPT-5.6 holistic,1200,20,21,0.9858333333333333,0.5781637717121585,0.985341041741743
+unsafe_binary,Unsafe,judge_claude_4_8_opus,Claude Opus 4.8 judge,deterministic_engine,Deterministic scoring engine,1200,3,256,0.7891666666666667,0.018314449790470328,0.7388927279990678
+evidence_failure,Evidence-sufficiency failure,judge_claude_4_8_opus,Claude Opus 4.8 judge,deterministic_engine,Deterministic scoring engine,1200,20,57,0.9408333333333333,0.05459387483355625,0.9369152676528962
+unsafe_binary,Unsafe,gpt_5_6_holistic,GPT-5.6 holistic,deterministic_engine,Deterministic scoring engine,1200,7,256,0.7925,0.04235680221527079,0.7421880965621197
+evidence_failure,Evidence-sufficiency failure,gpt_5_6_holistic,GPT-5.6 holistic,deterministic_engine,Deterministic scoring engine,1200,21,57,0.9383333333333334,0.02637984343135422,0.9341950228316593

@@ -1,0 +1,3 @@
+outcome,outcome_label,n,holistic_events,engine_events,engine_to_holistic_rate_ratio,holistic_only_positive,engine_only_positive,paired_exact_p,interpretation
+unsafe_binary,Unsafe,1200,7,256,36.57142857142857,0,249,2.210859150104178e-75,Paired method contrast; neither evaluator is a reference standard.
+evidence_failure,Evidence-sufficiency failure,1200,21,57,2.714285714285714,19,55,3.376813810738312e-05,Paired method contrast; neither evaluator is a reference standard.

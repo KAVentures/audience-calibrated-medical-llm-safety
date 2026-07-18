@@ -1,0 +1,17 @@
+outcome,model_key,contrast,risk_difference,ci_low,ci_high
+unsafe_binary,grok_4_3,role_only_isolation_minus_clinician,-0.0175,-0.035,-0.004999999999999999
+unsafe_binary,grok_4_3,patient_rewrite_minus_clinician,-0.0175,-0.035,-0.004999999999999999
+unsafe_binary,gpt_5_5,role_only_isolation_minus_clinician,0.0,0.0,0.0
+unsafe_binary,gpt_5_5,patient_rewrite_minus_clinician,0.0,0.0,0.0
+unsafe_binary,gemini_3_5_flash,role_only_isolation_minus_clinician,0.0075,-0.0025,0.02
+unsafe_binary,gemini_3_5_flash,patient_rewrite_minus_clinician,0.022500000000000003,0.005,0.0425
+unsafe_binary,claude_4_8_opus,role_only_isolation_minus_clinician,0.0,0.0,0.0
+unsafe_binary,claude_4_8_opus,patient_rewrite_minus_clinician,0.0,0.0,0.0
+evidence_sufficiency_failure,grok_4_3,role_only_isolation_minus_clinician,0.0,-0.02,0.015000000000000001
+evidence_sufficiency_failure,grok_4_3,patient_rewrite_minus_clinician,-0.010000000000000002,-0.03,0.0025000000000000005
+evidence_sufficiency_failure,gpt_5_5,role_only_isolation_minus_clinician,0.0025,0.0,0.0075
+evidence_sufficiency_failure,gpt_5_5,patient_rewrite_minus_clinician,0.0,0.0,0.0
+evidence_sufficiency_failure,gemini_3_5_flash,role_only_isolation_minus_clinician,0.027499999999999997,-0.019999999999999997,0.07750000000000001
+evidence_sufficiency_failure,gemini_3_5_flash,patient_rewrite_minus_clinician,0.035,-0.010000000000000002,0.08499999999999999
+evidence_sufficiency_failure,claude_4_8_opus,role_only_isolation_minus_clinician,0.0025,0.0,0.0075
+evidence_sufficiency_failure,claude_4_8_opus,patient_rewrite_minus_clinician,0.0025,0.0,0.0075

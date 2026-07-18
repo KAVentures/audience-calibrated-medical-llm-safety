@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this study or replication package, please cite it."
+title: "Evaluator-dependent conclusions in audience-calibrated medical LLM safety assessment: a paired multi-model benchmark study"
+type: article
+version: 1.0.0
+date-released: 2026-07-18
+authors:
+  - family-names: Afrasyab
+    given-names: Koyar
+    orcid: "https://orcid.org/0009-0009-3530-4606"
+    affiliation: Kinvectum AB
+repository-code: "https://github.com/KAVentures/audience-calibrated-medical-llm-safety"
+url: "https://github.com/KAVentures/audience-calibrated-medical-llm-safety"
+keywords:
+  - large language models
+  - artificial intelligence
+  - patient safety
+  - medical informatics
+  - reproducibility
+license: CC-BY-4.0
+

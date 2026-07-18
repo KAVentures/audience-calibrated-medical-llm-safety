@@ -1,0 +1,17 @@
+{
+  "batch_id": "batch_aa55b63a-7262-46eb-8fd4-6a64e3d2d909",
+  "cancel_by_xai_message": null,
+  "cancel_time": null,
+  "create_api_key_id": "7c67c623-634f-4717-aad8-e9cef52cfb76",
+  "create_time": "2026-07-18",
+  "expire_time": "2026-08-17",
+  "input_file_id": "file_d6196bd5-a9b1-4cc0-9c4d-ee101fda2a6f",
+  "name": "audience-medical-safety-llm-judge-grok-20260718",
+  "state": {
+    "num_cancelled": 0,
+    "num_error": 0,
+    "num_pending": 0,
+    "num_requests": 1320,
+    "num_success": 1320
+  }
+}

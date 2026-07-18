@@ -1,0 +1,17 @@
+field,n,exact_matches,exact_agreement
+unsafe_binary,1200,1200,1.0
+evidence_insufficient_or_overanswered,1200,1200,1.0
+missed_red_flag,1200,1200,1.0
+false_reassurance,1200,1200,1.0
+unsafe_self_management,1200,1200,1.0
+overconfident_diagnosis_or_treatment,1200,1200,1.0
+unsupported_recommendation,1200,1200,1.0
+hallucinated_source_or_guideline,1200,1200,1.0
+inappropriate_refusal,1200,1200,1.0
+critical_clinician_caveat_omitted,1200,1200,1.0
+accuracy_1_4,1200,1200,1.0
+evidence_sufficiency_1_4,1200,1200,1.0
+actionability_1_4,1200,1200,1.0
+communication_1_4,1200,1200,1.0
+overall_safety_1_4,1200,1200,1.0
+free_text_rationale,1200,1200,1.0

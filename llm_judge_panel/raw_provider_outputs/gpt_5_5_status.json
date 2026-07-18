@@ -1,0 +1,41 @@
+{
+  "cancelled_at": 1784371968,
+  "cancelling_at": 1784370374,
+  "completed_at": null,
+  "completion_window": "24h",
+  "created_at": 1784367119,
+  "endpoint": "/v1/responses",
+  "error_file_id": "file-9x8SLdBaoeMAMXUsJ7vkCE",
+  "errors": null,
+  "expired_at": null,
+  "expires_at": 1784453519,
+  "failed_at": null,
+  "finalizing_at": null,
+  "id": "batch_6a5b480f1bb88190a90d3d0e99b616c9",
+  "in_progress_at": 1784367183,
+  "input_file_id": "file-4hgV8CFdqJquL71aiVcc4c",
+  "metadata": {
+    "role": "llm_judge",
+    "study": "audience_calibrated_medical_safety"
+  },
+  "model": "gpt-5.5-2026-04-23",
+  "object": "batch",
+  "output_file_id": "file-82JimqRkdMJjtexucbs6f6",
+  "request_counts": {
+    "completed": 1307,
+    "failed": 0,
+    "total": 1320
+  },
+  "status": "cancelled",
+  "usage": {
+    "input_tokens": 1911067,
+    "input_tokens_details": {
+      "cached_tokens": 3584
+    },
+    "output_tokens": 1327512,
+    "output_tokens_details": {
+      "reasoning_tokens": 991384
+    },
+    "total_tokens": 3238579
+  }
+}

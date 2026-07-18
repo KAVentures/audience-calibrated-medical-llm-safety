@@ -1,0 +1,12 @@
+{
+  "batch_id": "batch_6a5b480f1bb88190a90d3d0e99b616c9",
+  "cancel_collect_finished_at_utc": "2026-07-18T10:54:03.435992+00:00",
+  "error_file_id": "file-9x8SLdBaoeMAMXUsJ7vkCE",
+  "output_file_id": "file-82JimqRkdMJjtexucbs6f6",
+  "request_counts": {
+    "completed": 1307,
+    "failed": 0,
+    "total": 1320
+  },
+  "status": "cancelled"
+}

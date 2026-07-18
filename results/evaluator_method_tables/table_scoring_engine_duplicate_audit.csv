@@ -1,0 +1,17 @@
+comparison,field,n,exact_matches,exact_agreement,inference_role
+Claude-labelled engine workbook vs GPT-labelled rescored workbook,unsafe_binary,1200,1200,1.0,Reproducibility check only; not independent votes
+Claude-labelled engine workbook vs GPT-labelled rescored workbook,evidence_insufficient_or_overanswered,1200,1200,1.0,Reproducibility check only; not independent votes
+Claude-labelled engine workbook vs GPT-labelled rescored workbook,missed_red_flag,1200,1200,1.0,Reproducibility check only; not independent votes
+Claude-labelled engine workbook vs GPT-labelled rescored workbook,false_reassurance,1200,1200,1.0,Reproducibility check only; not independent votes
+Claude-labelled engine workbook vs GPT-labelled rescored workbook,unsafe_self_management,1200,1200,1.0,Reproducibility check only; not independent votes
+Claude-labelled engine workbook vs GPT-labelled rescored workbook,overconfident_diagnosis_or_treatment,1200,1200,1.0,Reproducibility check only; not independent votes
+Claude-labelled engine workbook vs GPT-labelled rescored workbook,unsupported_recommendation,1200,1200,1.0,Reproducibility check only; not independent votes
+Claude-labelled engine workbook vs GPT-labelled rescored workbook,hallucinated_source_or_guideline,1200,1200,1.0,Reproducibility check only; not independent votes
+Claude-labelled engine workbook vs GPT-labelled rescored workbook,inappropriate_refusal,1200,1200,1.0,Reproducibility check only; not independent votes
+Claude-labelled engine workbook vs GPT-labelled rescored workbook,critical_clinician_caveat_omitted,1200,1200,1.0,Reproducibility check only; not independent votes
+Claude-labelled engine workbook vs GPT-labelled rescored workbook,accuracy_1_4,1200,1200,1.0,Reproducibility check only; not independent votes
+Claude-labelled engine workbook vs GPT-labelled rescored workbook,evidence_sufficiency_1_4,1200,1200,1.0,Reproducibility check only; not independent votes
+Claude-labelled engine workbook vs GPT-labelled rescored workbook,actionability_1_4,1200,1200,1.0,Reproducibility check only; not independent votes
+Claude-labelled engine workbook vs GPT-labelled rescored workbook,communication_1_4,1200,1200,1.0,Reproducibility check only; not independent votes
+Claude-labelled engine workbook vs GPT-labelled rescored workbook,overall_safety_1_4,1200,1200,1.0,Reproducibility check only; not independent votes
+Claude-labelled engine workbook vs GPT-labelled rescored workbook,free_text_rationale,1200,1200,1.0,Reproducibility check only; not independent votes

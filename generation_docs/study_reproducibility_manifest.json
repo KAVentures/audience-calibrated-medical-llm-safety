@@ -1,0 +1,529 @@
+{
+  "study": "audience_calibrated_medical_safety",
+  "created_utc": "2026-07-09T03:31:58.229628+00:00",
+  "python": "3.9.6",
+  "platform": "macOS-14.1-arm64-arm-64bit",
+  "git_commit": "not_a_git_repository_or_unavailable",
+  "n_topics": 100,
+  "n_prompts": 300,
+  "n_prompt_versions": 3,
+  "planned_models": [
+    "grok_4_3",
+    "gpt_5_5",
+    "gemini_3_5_flash",
+    "claude_4_8_opus"
+  ],
+  "generation_stop_status": "pre_api_until_explicit_approval",
+  "file_manifest": [
+    {
+      "path": "README.md",
+      "bytes": 3356,
+      "sha256": "380d477365c5493d0221045c9d969b1a06840c296f11d93ab60e1b97ae770ab7"
+    },
+    {
+      "path": "api_batches/claude_4_8_opus_requests.jsonl",
+      "bytes": 480136,
+      "sha256": "c66eab3f3df5d98d79b7363fd2f9051684d1d4f6cca13ede14712bcc9ab06759"
+    },
+    {
+      "path": "api_batches/cost_estimation_inputs.csv",
+      "bytes": 289330,
+      "sha256": "615dedc0cef1c7442b3e5a6beec5f1496ceaf61029c729ef13dce3ed9f61689c"
+    },
+    {
+      "path": "api_batches/cost_estimation_summary.csv",
+      "bytes": 402,
+      "sha256": "d562038ac921f35fab45caa38c7b842f74800788b3a0de1af17c689753e81236"
+    },
+    {
+      "path": "api_batches/gemini_3_5_flash_requests.jsonl",
+      "bytes": 480736,
+      "sha256": "31d4b050573464636108b03091e3612149496c102c31599e8e8027ade2058e88"
+    },
+    {
+      "path": "api_batches/gpt_5_5_requests.jsonl",
+      "bytes": 475336,
+      "sha256": "42c03546a26e89fc5235800505d08bf80c18c885c20dc53598d737fd53e98879"
+    },
+    {
+      "path": "api_batches/grok_4_3_requests.jsonl",
+      "bytes": 475936,
+      "sha256": "e04c5c15b400588129bc34d49f38c835946cc5c79c8d58f0b7981480aa06ad99"
+    },
+    {
+      "path": "config/api_config.example.env",
+      "bytes": 277,
+      "sha256": "c097604fee12697ac7b4e73c78210452e49f4f9ded20c2e4f2eaacfcf4d31b41"
+    },
+    {
+      "path": "config/models.yaml",
+      "bytes": 1045,
+      "sha256": "1c074a695ad456701e55c871604403e205de09e733b009decf0788b3beda3f3f"
+    },
+    {
+      "path": "data/processed/prompt_families.csv",
+      "bytes": 128533,
+      "sha256": "224b3d4e7c343bb8a450f70d542a7cbff4891a4f3a565cb163f94ee9d6811650"
+    },
+    {
+      "path": "data/processed/rewrite_fidelity_checklist.csv",
+      "bytes": 124380,
+      "sha256": "13eb41f487aacba661a741c1e9ca6463ba9abee7aec5dd355c48158bb494ba7b"
+    },
+    {
+      "path": "data/processed/topic_sample.csv",
+      "bytes": 24278,
+      "sha256": "97f817ac0da1408521748ce8be4639ebce96f732a6c4785bd8a25f6d8a16d6c1"
+    },
+    {
+      "path": "data/processed/topic_sample_specialty_summary.csv",
+      "bytes": 806,
+      "sha256": "3ab3959fbc6243c08be7ac44a1a772393b8de6c670733ea89e4f45a778f3f2d9"
+    },
+    {
+      "path": "data/raw/README.md",
+      "bytes": 4400,
+      "sha256": "a28ff4c7c43ed083dfda95e73dc1b267c0f0190b82832b90439919e52204e472"
+    },
+    {
+      "path": "data/raw/answers.parquet",
+      "bytes": 4632957,
+      "sha256": "3528f11a0bb150be418eae9219e69def7482d389f6b10d39e3bd7072e28ae79e"
+    },
+    {
+      "path": "data/raw/questions.parquet",
+      "bytes": 75326,
+      "sha256": "1af9b254151ac659286ab609e7c7b7f6bb8f830fa82eecb5b9eddb3a2322b9b3"
+    },
+    {
+      "path": "data/raw/ratings.parquet",
+      "bytes": 37422,
+      "sha256": "e1e2f9c53bfd819279c90dc8bb39656d7a69ffa3fbfe40e5c5902a54a2964321"
+    },
+    {
+      "path": "data/review_packets/blinding_key_do_not_share_with_reviewers.csv",
+      "bytes": 104052,
+      "sha256": "da031c7dc7da749e3bf332244173dad1266c715acc546e6f95cb02a0f7bc5b01"
+    },
+    {
+      "path": "data/review_packets/physician_review_packet_all.csv",
+      "bytes": 2428204,
+      "sha256": "8193bc75d4ad1c3c1a6d79b9ae44b5ee541dee7854909787c2f8e53cd05711f5"
+    },
+    {
+      "path": "docs/data_dictionary.md",
+      "bytes": 1931,
+      "sha256": "6551421dab5a5d95e56bd516138c3c2d29900f2ea912c3c1c0ca63a1635b5f94"
+    },
+    {
+      "path": "docs/ethics_irb_note.md",
+      "bytes": 801,
+      "sha256": "bd1b942c556fc8744f385c240c3c55585cf1533bd19e28fd01ee29641982a08c"
+    },
+    {
+      "path": "docs/frozen_prompt_manifest.csv",
+      "bytes": 144630,
+      "sha256": "16fcbcd3de0f78953c7e4daf0dfb1a873ed187b3b98c284dc742b33785805e71"
+    },
+    {
+      "path": "docs/model_generation_run_report.md",
+      "bytes": 3817,
+      "sha256": "0bc1ad890c32b489617ef2ef1cab1a082c456e432b7dacbf7397f74bc6afc961"
+    },
+    {
+      "path": "docs/pre_api_checklist.md",
+      "bytes": 886,
+      "sha256": "b156db0e9973f2554425625efca28d57a9ba3459e956b5a885fd276e507d7bf1"
+    },
+    {
+      "path": "docs/pre_registration_summary.md",
+      "bytes": 1088,
+      "sha256": "43a1b438da58ed63a4535d77ba86e083bed5e5091128ec8ed8bc836a745bd24f"
+    },
+    {
+      "path": "docs/reproducibility_and_audit_plan.md",
+      "bytes": 2069,
+      "sha256": "25f0a4502213b6649194f5a5f55c83c265b97f9253a22bb87835da93c9ee626e"
+    },
+    {
+      "path": "docs/study_reproducibility_manifest.json",
+      "bytes": 21507,
+      "sha256": "864ffbb25b148a051f84885ea39f3799ab81834159ca8f6a8617984e3a337e00"
+    },
+    {
+      "path": "instruments/reviewer_form_template.csv",
+      "bytes": 443,
+      "sha256": "ce8a105a9ea7f3d57f729b1f8b20a3c31ae19c7a53290937b870ae6ff702f9b3"
+    },
+    {
+      "path": "manuscript/manuscript_shell.md",
+      "bytes": 4863,
+      "sha256": "eab6d6d738a1687b21b14bf3c321a72f75f6d014ac6088b13a6bb9c435472a65"
+    },
+    {
+      "path": "prompts/prompt_family_template.md",
+      "bytes": 1041,
+      "sha256": "0b30ec46376fc178581a217215a247c6f8eb775303c5447fd2f2deffdc10f18e"
+    },
+    {
+      "path": "prompts/system_prompt.txt",
+      "bytes": 752,
+      "sha256": "45aee81b5e09baa2b4d0a07b4def0d5352c1d1788ab1414e203472d0b3bed0b6"
+    },
+    {
+      "path": "protocol/protocol.md",
+      "bytes": 6548,
+      "sha256": "146b29e07a48b578858a64b5251ff867dc70889a1dd0181ea22606731983c4c0"
+    },
+    {
+      "path": "protocol/reviewer_manual.md",
+      "bytes": 3458,
+      "sha256": "bc00c6257415f7355bf601e8a5e7cb0f2563ce11a8b1ef7065a67098df645d62"
+    },
+    {
+      "path": "protocol/rewrite_protocol.md",
+      "bytes": 2646,
+      "sha256": "4ade6f143858678e5885e9aac80c50b94cc5ffa6686ae142761cdbc940929822"
+    },
+    {
+      "path": "protocol/statistical_analysis_plan.md",
+      "bytes": 5424,
+      "sha256": "607eab147bbeaa4c6db5d95f066ddb8488f408f67148a6fbbf3a26077689afcc"
+    },
+    {
+      "path": "results/generation_error_log.csv",
+      "bytes": 1778,
+      "sha256": "23f64d42f89409fd39bc960683b7a3bcebf40bce8c611a4fd30b35edb8134205"
+    },
+    {
+      "path": "results/generation_prompt_coverage.csv",
+      "bytes": 445,
+      "sha256": "fc8c4ff0dd2080c8d74b7a5570790413d67a320c0b84cb458dd3c557a3039d88"
+    },
+    {
+      "path": "results/generation_run_summary_by_model.csv",
+      "bytes": 1307,
+      "sha256": "44d0b75c61268a673012449834d0ec8073d514d427565621b1a3a49723626938"
+    },
+    {
+      "path": "results/power_precision_simulation_runs.csv",
+      "bytes": 92296,
+      "sha256": "f365ba9cf8b9c0fda5ccbf4780db43729e81743bab656ae6b3b7d28d5c40c391"
+    },
+    {
+      "path": "results/power_precision_simulation_summary.csv",
+      "bytes": 512,
+      "sha256": "fd70666d3ac67b9a9d7fd71dc53a443952df28bd3670f60abb30b5ab687a9723"
+    },
+    {
+      "path": "results/provider_model_probe.json",
+      "bytes": 4721,
+      "sha256": "ada1d21ece268285b9b17a1d7d7b3f134106726bfea0e66fed3be1232586f826"
+    },
+    {
+      "path": "scripts/00_fetch_real_pocqi.py",
+      "bytes": 1007,
+      "sha256": "d1128825546fb672599f7de68fb16815874d7ca57d970b4f099cbba9bd0e8c4d"
+    },
+    {
+      "path": "scripts/01_select_topics.py",
+      "bytes": 3675,
+      "sha256": "95dc612fed787fe83081c0c169edbd7ccb4b916dacb0e21253d28ed8dad6e90e"
+    },
+    {
+      "path": "scripts/02_build_prompt_families.py",
+      "bytes": 4218,
+      "sha256": "fee0f46d79594927097c81b75ce4162d8c3ea6f0173df998ea2247b2336b3d29"
+    },
+    {
+      "path": "scripts/03_prepare_api_batches.py",
+      "bytes": 3519,
+      "sha256": "4ec4fd2746d8e5c2dfc780dfebecd1e6a689c8c91af99b7cce818cf8eff993d3"
+    },
+    {
+      "path": "scripts/04_run_api_calls.py",
+      "bytes": 12180,
+      "sha256": "b6deb06928e08dccaae3b9e80813b2dc8fd46a426f6ede736e3c828657cd2be0"
+    },
+    {
+      "path": "scripts/05_export_review_packets.py",
+      "bytes": 1744,
+      "sha256": "81883dac4da5929c6d2032136a42cbc7ae7396c7fa2b6d8dd212e51ab357d58e"
+    },
+    {
+      "path": "scripts/06_analyze_results.py",
+      "bytes": 2003,
+      "sha256": "20736e3431cb94adc2e019a88972f36e13f5bdece0bf8b18c75468df10922025"
+    },
+    {
+      "path": "scripts/07_power_precision_simulation.py",
+      "bytes": 3007,
+      "sha256": "1ace032296c19abc2ffbb09bcf498ac4509a70f91a473bb0be825776af72ff05"
+    },
+    {
+      "path": "scripts/08_probe_provider_models.py",
+      "bytes": 3841,
+      "sha256": "b60687c0866cb64bbd563f9561ccc2c3a4f73bbb6b73c628bba28bc0fca398ae"
+    },
+    {
+      "path": "scripts/09_freeze_reproducibility_manifest.py",
+      "bytes": 3086,
+      "sha256": "3390b592f47cf06ca2562bbaf38eb13258512831c6e7f3668af9a14641685372"
+    },
+    {
+      "path": "scripts/10_summarize_generation.py",
+      "bytes": 5284,
+      "sha256": "bd34acd336d2a2aae0af0c636f90d5b5e8f007c6758fd023ee6bca9bae7e406e"
+    },
+    {
+      "path": "sources/source_review.md",
+      "bytes": 5142,
+      "sha256": "9b99226dbe05f7e5c5678e5f91458db48017dde6bcc1f4c6f7c0d076bf02cc3a"
+    },
+    {
+      "path": "work_pycache/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/_bootlocale.cpython-39.pyc",
+      "bytes": 1306,
+      "sha256": "93a23043d5dc2c73224f86e5c4fb1d2dac829227f0e234f14e7eb522120039e1"
+    },
+    {
+      "path": "work_pycache/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/_collections_abc.cpython-39.pyc",
+      "bytes": 31816,
+      "sha256": "16b1d1a235adfd951f162d47ba89b15abbe800561ca277212e8b785dc7ecebb8"
+    },
+    {
+      "path": "work_pycache/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/_sitebuiltins.cpython-39.pyc",
+      "bytes": 3580,
+      "sha256": "b3159c7e9a2d0b5e6a40b0ff473a5eee423a073fd85dff5cbff79b913dd6cbf4"
+    },
+    {
+      "path": "work_pycache/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/_weakrefset.cpython-39.pyc",
+      "bytes": 7752,
+      "sha256": "9d9ba824ab2a6b26e3112df5894893eeaccfb130cdab71ad1a6698daa26cc1f1"
+    },
+    {
+      "path": "work_pycache/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/abc.cpython-39.pyc",
+      "bytes": 5854,
+      "sha256": "9f191b10aa54b96a1cffa47492aca763c1769f4f1c98b9337e4152f40b6d91e1"
+    },
+    {
+      "path": "work_pycache/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/codecs.cpython-39.pyc",
+      "bytes": 33967,
+      "sha256": "fe3e9984b12bfc87f87e1fcfab19e07993de1f33892f71b85771b1ecf4dd7927"
+    },
+    {
+      "path": "work_pycache/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/collections/__init__.cpython-39.pyc",
+      "bytes": 48180,
+      "sha256": "d6414a8f15387d4565dbda9644bd7be9b9c16a81380cbe90754b0978e1d5f003"
+    },
+    {
+      "path": "work_pycache/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/collections/abc.cpython-39.pyc",
+      "bytes": 383,
+      "sha256": "e84f0cfc8aa7d546ff851c92d0224eea70d0bdad8854f60355046a798b168222"
+    },
+    {
+      "path": "work_pycache/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/contextlib.cpython-39.pyc",
+      "bytes": 19567,
+      "sha256": "d79bb72b4977119bfc53fb7dd94efd2fa45e6a635743b3905acb7846c4054595"
+    },
+    {
+      "path": "work_pycache/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/copyreg.cpython-39.pyc",
+      "bytes": 4509,
+      "sha256": "2431eb6586a25ce62a4cd011c239eb2f35fa45ca2e532fdfd933c20ab28cce8d"
+    },
+    {
+      "path": "work_pycache/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/encodings/__init__.cpython-39.pyc",
+      "bytes": 4004,
+      "sha256": "f50e45c1e9177afb0e18540c312a3b9ea844d87d8bea2ffec4a0c04f0b06c990"
+    },
+    {
+      "path": "work_pycache/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/encodings/aliases.cpython-39.pyc",
+      "bytes": 6409,
+      "sha256": "f5f68260eb7fa0707e7c4b2db3d94831b7c73d4fab6ca85d1f41af2137bacfd4"
+    },
+    {
+      "path": "work_pycache/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/encodings/cp437.cpython-39.pyc",
+      "bytes": 7927,
+      "sha256": "91a5de759ecfc795aedbb203f8fc52018378390a208ac2b5e54af895e9ace763"
+    },
+    {
+      "path": "work_pycache/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/encodings/latin_1.cpython-39.pyc",
+      "bytes": 1974,
+      "sha256": "ba7a7163a41de35da104b7d73a4fbe23b2dcbc2ff19c5861a8e8ea7c3b5dd8e8"
+    },
+    {
+      "path": "work_pycache/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/encodings/utf_8.cpython-39.pyc",
+      "bytes": 1711,
+      "sha256": "18e493c7f3855a94726ccf2b7a9e827739d63c03f5fdf11e3e9702ca5f919708"
+    },
+    {
+      "path": "work_pycache/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/enum.cpython-39.pyc",
+      "bytes": 26099,
+      "sha256": "a48997a70c8500a3b4dc067d2283cbd77c5b594f639338f297214d68bf30fc91"
+    },
+    {
+      "path": "work_pycache/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/functools.cpython-39.pyc",
+      "bytes": 28261,
+      "sha256": "3ddedd691a933914774515b372b43f6f9c8c6e777b463c92fd5608e2089b6e6f"
+    },
+    {
+      "path": "work_pycache/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/genericpath.cpython-39.pyc",
+      "bytes": 4103,
+      "sha256": "f437176194b2d9f2269a117ef84e951ad11283e432f772d1ce4b96a53c45fa00"
+    },
+    {
+      "path": "work_pycache/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/heapq.cpython-39.pyc",
+      "bytes": 14119,
+      "sha256": "e6fec83a0b81e0bbd8152e0aa3f506539527423bd68f4267a59eedc6f6a16457"
+    },
+    {
+      "path": "work_pycache/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/importlib/__init__.cpython-39.pyc",
+      "bytes": 3912,
+      "sha256": "0453d909d7e7c7e17e57362bdcaa5045fcc400ebe8784596f559e384376f68a9"
+    },
+    {
+      "path": "work_pycache/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/importlib/abc.cpython-39.pyc",
+      "bytes": 16896,
+      "sha256": "70a26c4f00e771bcb77a3760dea937232910cfb3059964eed4ea6f823854a8a5"
+    },
+    {
+      "path": "work_pycache/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/importlib/machinery.cpython-39.pyc",
+      "bytes": 1043,
+      "sha256": "8592ca96a4ed866fd9c2d90f47b523ffd3f8c2cb64036ef612dae0fd5ff7f4c8"
+    },
+    {
+      "path": "work_pycache/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/importlib/util.cpython-39.pyc",
+      "bytes": 9401,
+      "sha256": "75036f00441fa2ee775898ecfe00bad7515e8cb5267a8cfa04df989151782d56"
+    },
+    {
+      "path": "work_pycache/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/io.cpython-39.pyc",
+      "bytes": 3487,
+      "sha256": "54fcc5436fc7982764709798eafdcffb96290757c7d6571fe68d2faf4c0180b9"
+    },
+    {
+      "path": "work_pycache/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/keyword.cpython-39.pyc",
+      "bytes": 995,
+      "sha256": "d4ae5c5dd78499afaff6a83c0ed74ab0078deebab8ee2d07c3c17bd466700969"
+    },
+    {
+      "path": "work_pycache/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/linecache.cpython-39.pyc",
+      "bytes": 4367,
+      "sha256": "050bfb8f12abff7ced8fe67d7ce271bb984ea8d006df682554b5e031d2493be3"
+    },
+    {
+      "path": "work_pycache/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/operator.cpython-39.pyc",
+      "bytes": 13827,
+      "sha256": "951786c836fa3247ad98c0f3808a2e558adf929ffbfac0aa0e5f37871fd9d8be"
+    },
+    {
+      "path": "work_pycache/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/os.cpython-39.pyc",
+      "bytes": 32076,
+      "sha256": "a53b1bb5fc4bb26420b781f5c12a0734b9e17cae9c971c46a2c4274d1aee2001"
+    },
+    {
+      "path": "work_pycache/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pkgutil.cpython-39.pyc",
+      "bytes": 18645,
+      "sha256": "79701c481ce8db3225fc96972edc5167efccf1c42c6bf2fb204d0f6d8ebdfd65"
+    },
+    {
+      "path": "work_pycache/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/posixpath.cpython-39.pyc",
+      "bytes": 10408,
+      "sha256": "c26cfd6781e5f5e0e817fa3a933540b4314c31b0ce97a81d37671c62fe93aaab"
+    },
+    {
+      "path": "work_pycache/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/py_compile.cpython-39.pyc",
+      "bytes": 7443,
+      "sha256": "57edf3b3e8f197af5bb48d462075d52d463c846b56bb94a0c7af71fa47ce8105"
+    },
+    {
+      "path": "work_pycache/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/re.cpython-39.pyc",
+      "bytes": 14441,
+      "sha256": "8f7f3d32c455a4269e91e37173b218f19092b8d21a97671079b0391dd35bc56f"
+    },
+    {
+      "path": "work_pycache/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/reprlib.cpython-39.pyc",
+      "bytes": 5386,
+      "sha256": "ae819993b2a3d11edb5e93e6619075ef374a89c0bd6c5b574b902b10b95879f7"
+    },
+    {
+      "path": "work_pycache/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/runpy.cpython-39.pyc",
+      "bytes": 8588,
+      "sha256": "e3aae8792560df7100dd57f34b7acb033376fcd0e5d8d754ec02057d3e6abc8e"
+    },
+    {
+      "path": "work_pycache/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/site.cpython-39.pyc",
+      "bytes": 17473,
+      "sha256": "1a68c326a725e0d293b7d3817d5f2102342e2c2b2cf0de176cc837d7e0cf678e"
+    },
+    {
+      "path": "work_pycache/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/sre_compile.cpython-39.pyc",
+      "bytes": 15132,
+      "sha256": "80e4db3d7f14c9ad8fefa1cab133ff79e9488b1805823e08e8983ad2754bcb48"
+    },
+    {
+      "path": "work_pycache/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/sre_constants.cpython-39.pyc",
+      "bytes": 6396,
+      "sha256": "ab440d2fabe553523f3702922567815588f043c91ad4c48c2414885092b79020"
+    },
+    {
+      "path": "work_pycache/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/sre_parse.cpython-39.pyc",
+      "bytes": 21682,
+      "sha256": "869e1122e75eecad6cb04d25aa0d884c912a810ee57ddc89e9b00a25dd062036"
+    },
+    {
+      "path": "work_pycache/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/stat.cpython-39.pyc",
+      "bytes": 4451,
+      "sha256": "a8623fdcbeccf50ccbaaba178986b67846324ffaa638c3b0ea405049dd6f5a67"
+    },
+    {
+      "path": "work_pycache/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/token.cpython-39.pyc",
+      "bytes": 2575,
+      "sha256": "bda8f8bdea3ca449db8b9d9f73fb8cac6f99a02989ef2c9e4e29d216fd6689d7"
+    },
+    {
+      "path": "work_pycache/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/tokenize.cpython-39.pyc",
+      "bytes": 17216,
+      "sha256": "e61ee981279f096a82dc18222994c5721b4a868957aaf360217dbca703b41eee"
+    },
+    {
+      "path": "work_pycache/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/traceback.cpython-39.pyc",
+      "bytes": 20282,
+      "sha256": "3d8d3a6056522ef663cfe1b542342fad26be52940689224a4c247714226dfbd8"
+    },
+    {
+      "path": "work_pycache/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/types.cpython-39.pyc",
+      "bytes": 9300,
+      "sha256": "49ab3223f927652c5e7600d41229652174e152182fc7c275590121d681e216c5"
+    },
+    {
+      "path": "work_pycache/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/typing.cpython-39.pyc",
+      "bytes": 71417,
+      "sha256": "66d8a33edf7c44a08ac5b2309f31e18e0222d816f736e531f533051e1aa8d86a"
+    },
+    {
+      "path": "work_pycache/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/warnings.cpython-39.pyc",
+      "bytes": 13684,
+      "sha256": "5883173aa40775368ed943c968c15eac981e73cbb5128174c990a6c4e72d9c15"
+    },
+    {
+      "path": "work_pycache/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/weakref.cpython-39.pyc",
+      "bytes": 20237,
+      "sha256": "e499f1e094e9e39c9fe20e828ce121bd7f034953b1cecde2512c81f299b91be4"
+    },
+    {
+      "path": "work_pycache/Users/koyarafrasyab/Documents/Codex/2026-07-08/yes-parts-of-it-definitely-exist/outputs/Research/audience_calibrated_medical_safety/scripts/04_run_api_calls.cpython-39.pyc",
+      "bytes": 9613,
+      "sha256": "3c09c2a67171c0f2dbf41b1934102b477782072ee69b3906e3d0cfc96ed3280a"
+    },
+    {
+      "path": "work_pycache/Users/koyarafrasyab/Documents/Codex/2026-07-08/yes-parts-of-it-definitely-exist/outputs/Research/audience_calibrated_medical_safety/scripts/05_export_review_packets.cpython-39.pyc",
+      "bytes": 1708,
+      "sha256": "0f70878a0a5991fe4b0174b88e65d2b7dfe571d5416b0cda2c3b410ea63cb5f1"
+    },
+    {
+      "path": "work_pycache/Users/koyarafrasyab/Documents/Codex/2026-07-08/yes-parts-of-it-definitely-exist/outputs/Research/audience_calibrated_medical_safety/scripts/10_summarize_generation.cpython-39.pyc",
+      "bytes": 4382,
+      "sha256": "1def62e15e4481ee02f90faba3fff2f87458d347012021dc2b04651d8151b1b2"
+    }
+  ]
+}

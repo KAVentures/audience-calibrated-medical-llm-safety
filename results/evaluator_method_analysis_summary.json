@@ -1,0 +1,298 @@
+{
+  "analysis_date": "2026-07-18",
+  "bootstrap_seed": 20260718,
+  "bootstrap_replicates": 5000,
+  "primary_inference_source": "four_judge_panel",
+  "legacy_streams_role": "secondary evaluator-method comparison",
+  "deterministic_engine_counted_once": true,
+  "overall_rates": [
+    {
+      "method": "judge_grok_4_3",
+      "method_label": "Grok 4.3 judge",
+      "outcome": "unsafe_binary",
+      "outcome_label": "Unsafe",
+      "n": 1200,
+      "events": 0,
+      "rate": 0.0,
+      "ci_low": 0.0,
+      "ci_high": 0.0
+    },
+    {
+      "method": "judge_grok_4_3",
+      "method_label": "Grok 4.3 judge",
+      "outcome": "evidence_failure",
+      "outcome_label": "Evidence-sufficiency failure",
+      "n": 1200,
+      "events": 18,
+      "rate": 0.014999999999999998,
+      "ci_low": 0.008333333333333333,
+      "ci_high": 0.02166666666666667
+    },
+    {
+      "method": "judge_gpt_5_5",
+      "method_label": "GPT-5.5 judge",
+      "outcome": "unsafe_binary",
+      "outcome_label": "Unsafe",
+      "n": 1200,
+      "events": 18,
+      "rate": 0.014999999999999998,
+      "ci_low": 0.0075,
+      "ci_high": 0.023333333333333338
+    },
+    {
+      "method": "judge_gpt_5_5",
+      "method_label": "GPT-5.5 judge",
+      "outcome": "evidence_failure",
+      "outcome_label": "Evidence-sufficiency failure",
+      "n": 1200,
+      "events": 51,
+      "rate": 0.04250000000000001,
+      "ci_low": 0.028333333333333332,
+      "ci_high": 0.05916666666666667
+    },
+    {
+      "method": "judge_gemini_3_5_flash",
+      "method_label": "Gemini 3.5 Flash judge",
+      "outcome": "unsafe_binary",
+      "outcome_label": "Unsafe",
+      "n": 1200,
+      "events": 4,
+      "rate": 0.003333333333333333,
+      "ci_low": 0.0008333333333333333,
+      "ci_high": 0.006666666666666666
+    },
+    {
+      "method": "judge_gemini_3_5_flash",
+      "method_label": "Gemini 3.5 Flash judge",
+      "outcome": "evidence_failure",
+      "outcome_label": "Evidence-sufficiency failure",
+      "n": 1200,
+      "events": 13,
+      "rate": 0.010833333333333332,
+      "ci_low": 0.005,
+      "ci_high": 0.017499999999999995
+    },
+    {
+      "method": "judge_claude_4_8_opus",
+      "method_label": "Claude Opus 4.8 judge",
+      "outcome": "unsafe_binary",
+      "outcome_label": "Unsafe",
+      "n": 1200,
+      "events": 3,
+      "rate": 0.0025,
+      "ci_low": 0.0,
+      "ci_high": 0.005833333333333333
+    },
+    {
+      "method": "judge_claude_4_8_opus",
+      "method_label": "Claude Opus 4.8 judge",
+      "outcome": "evidence_failure",
+      "outcome_label": "Evidence-sufficiency failure",
+      "n": 1200,
+      "events": 20,
+      "rate": 0.016666666666666666,
+      "ci_low": 0.009166666666666667,
+      "ci_high": 0.025
+    },
+    {
+      "method": "gpt_5_6_holistic",
+      "method_label": "GPT-5.6 holistic",
+      "outcome": "unsafe_binary",
+      "outcome_label": "Unsafe",
+      "n": 1200,
+      "events": 7,
+      "rate": 0.005833333333333333,
+      "ci_low": 0.0025,
+      "ci_high": 0.01
+    },
+    {
+      "method": "gpt_5_6_holistic",
+      "method_label": "GPT-5.6 holistic",
+      "outcome": "evidence_failure",
+      "outcome_label": "Evidence-sufficiency failure",
+      "n": 1200,
+      "events": 21,
+      "rate": 0.0175,
+      "ci_low": 0.01,
+      "ci_high": 0.026666666666666665
+    },
+    {
+      "method": "deterministic_engine",
+      "method_label": "Deterministic scoring engine",
+      "outcome": "unsafe_binary",
+      "outcome_label": "Unsafe",
+      "n": 1200,
+      "events": 256,
+      "rate": 0.2133333333333334,
+      "ci_low": 0.17666666666666664,
+      "ci_high": 0.2508333333333333
+    },
+    {
+      "method": "deterministic_engine",
+      "method_label": "Deterministic scoring engine",
+      "outcome": "evidence_failure",
+      "outcome_label": "Evidence-sufficiency failure",
+      "n": 1200,
+      "events": 57,
+      "rate": 0.0475,
+      "ci_low": 0.0275,
+      "ci_high": 0.06916666666666665
+    }
+  ],
+  "paired_holistic_engine_contrast": [
+    {
+      "outcome": "unsafe_binary",
+      "outcome_label": "Unsafe",
+      "n": 1200,
+      "holistic_events": 7,
+      "engine_events": 256,
+      "engine_to_holistic_rate_ratio": 36.57142857142857,
+      "holistic_only_positive": 0,
+      "engine_only_positive": 249,
+      "paired_exact_p": 2.210859150104178e-75,
+      "interpretation": "Paired method contrast; neither evaluator is a reference standard."
+    },
+    {
+      "outcome": "evidence_failure",
+      "outcome_label": "Evidence-sufficiency failure",
+      "n": 1200,
+      "holistic_events": 21,
+      "engine_events": 57,
+      "engine_to_holistic_rate_ratio": 2.714285714285714,
+      "holistic_only_positive": 19,
+      "engine_only_positive": 55,
+      "paired_exact_p": 3.376813810738312e-05,
+      "interpretation": "Paired method contrast; neither evaluator is a reference standard."
+    }
+  ],
+  "engine_duplicate_audit": [
+    {
+      "comparison": "Claude-labelled engine workbook vs GPT-labelled rescored workbook",
+      "field": "unsafe_binary",
+      "n": 1200,
+      "exact_matches": 1200,
+      "exact_agreement": 1.0,
+      "inference_role": "Reproducibility check only; not independent votes"
+    },
+    {
+      "comparison": "Claude-labelled engine workbook vs GPT-labelled rescored workbook",
+      "field": "evidence_insufficient_or_overanswered",
+      "n": 1200,
+      "exact_matches": 1200,
+      "exact_agreement": 1.0,
+      "inference_role": "Reproducibility check only; not independent votes"
+    },
+    {
+      "comparison": "Claude-labelled engine workbook vs GPT-labelled rescored workbook",
+      "field": "missed_red_flag",
+      "n": 1200,
+      "exact_matches": 1200,
+      "exact_agreement": 1.0,
+      "inference_role": "Reproducibility check only; not independent votes"
+    },
+    {
+      "comparison": "Claude-labelled engine workbook vs GPT-labelled rescored workbook",
+      "field": "false_reassurance",
+      "n": 1200,
+      "exact_matches": 1200,
+      "exact_agreement": 1.0,
+      "inference_role": "Reproducibility check only; not independent votes"
+    },
+    {
+      "comparison": "Claude-labelled engine workbook vs GPT-labelled rescored workbook",
+      "field": "unsafe_self_management",
+      "n": 1200,
+      "exact_matches": 1200,
+      "exact_agreement": 1.0,
+      "inference_role": "Reproducibility check only; not independent votes"
+    },
+    {
+      "comparison": "Claude-labelled engine workbook vs GPT-labelled rescored workbook",
+      "field": "overconfident_diagnosis_or_treatment",
+      "n": 1200,
+      "exact_matches": 1200,
+      "exact_agreement": 1.0,
+      "inference_role": "Reproducibility check only; not independent votes"
+    },
+    {
+      "comparison": "Claude-labelled engine workbook vs GPT-labelled rescored workbook",
+      "field": "unsupported_recommendation",
+      "n": 1200,
+      "exact_matches": 1200,
+      "exact_agreement": 1.0,
+      "inference_role": "Reproducibility check only; not independent votes"
+    },
+    {
+      "comparison": "Claude-labelled engine workbook vs GPT-labelled rescored workbook",
+      "field": "hallucinated_source_or_guideline",
+      "n": 1200,
+      "exact_matches": 1200,
+      "exact_agreement": 1.0,
+      "inference_role": "Reproducibility check only; not independent votes"
+    },
+    {
+      "comparison": "Claude-labelled engine workbook vs GPT-labelled rescored workbook",
+      "field": "inappropriate_refusal",
+      "n": 1200,
+      "exact_matches": 1200,
+      "exact_agreement": 1.0,
+      "inference_role": "Reproducibility check only; not independent votes"
+    },
+    {
+      "comparison": "Claude-labelled engine workbook vs GPT-labelled rescored workbook",
+      "field": "critical_clinician_caveat_omitted",
+      "n": 1200,
+      "exact_matches": 1200,
+      "exact_agreement": 1.0,
+      "inference_role": "Reproducibility check only; not independent votes"
+    },
+    {
+      "comparison": "Claude-labelled engine workbook vs GPT-labelled rescored workbook",
+      "field": "accuracy_1_4",
+      "n": 1200,
+      "exact_matches": 1200,
+      "exact_agreement": 1.0,
+      "inference_role": "Reproducibility check only; not independent votes"
+    },
+    {
+      "comparison": "Claude-labelled engine workbook vs GPT-labelled rescored workbook",
+      "field": "evidence_sufficiency_1_4",
+      "n": 1200,
+      "exact_matches": 1200,
+      "exact_agreement": 1.0,
+      "inference_role": "Reproducibility check only; not independent votes"
+    },
+    {
+      "comparison": "Claude-labelled engine workbook vs GPT-labelled rescored workbook",
+      "field": "actionability_1_4",
+      "n": 1200,
+      "exact_matches": 1200,
+      "exact_agreement": 1.0,
+      "inference_role": "Reproducibility check only; not independent votes"
+    },
+    {
+      "comparison": "Claude-labelled engine workbook vs GPT-labelled rescored workbook",
+      "field": "communication_1_4",
+      "n": 1200,
+      "exact_matches": 1200,
+      "exact_agreement": 1.0,
+      "inference_role": "Reproducibility check only; not independent votes"
+    },
+    {
+      "comparison": "Claude-labelled engine workbook vs GPT-labelled rescored workbook",
+      "field": "overall_safety_1_4",
+      "n": 1200,
+      "exact_matches": 1200,
+      "exact_agreement": 1.0,
+      "inference_role": "Reproducibility check only; not independent votes"
+    },
+    {
+      "comparison": "Claude-labelled engine workbook vs GPT-labelled rescored workbook",
+      "field": "free_text_rationale",
+      "n": 1200,
+      "exact_matches": 1200,
+      "exact_agreement": 1.0,
+      "inference_role": "Reproducibility check only; not independent votes"
+    }
+  ]
+}

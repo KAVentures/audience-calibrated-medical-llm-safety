@@ -1,0 +1,96 @@
+{
+  "blinding_key_sha256": "1f7bb97955073254e20f38c51798aae15a1049b2e8db2601e8bd65e3a1fe6bfb",
+  "checks": {
+    "balanced_duplicate_sample": true,
+    "complete_factorial_coverage": true,
+    "nonempty_prompts_and_responses": true,
+    "opaque_model_visible_identifiers": true,
+    "source_count_1200": true,
+    "unique_response_ids": true
+  },
+  "coverage": {
+    "claude_4_8_opus|clinician_original": 100,
+    "claude_4_8_opus|patient_rewrite": 100,
+    "claude_4_8_opus|role_only_isolation": 100,
+    "gemini_3_5_flash|clinician_original": 100,
+    "gemini_3_5_flash|patient_rewrite": 100,
+    "gemini_3_5_flash|role_only_isolation": 100,
+    "gpt_5_5|clinician_original": 100,
+    "gpt_5_5|patient_rewrite": 100,
+    "gpt_5_5|role_only_isolation": 100,
+    "grok_4_3|clinician_original": 100,
+    "grok_4_3|patient_rewrite": 100,
+    "grok_4_3|role_only_isolation": 100
+  },
+  "duplicate_coverage": {
+    "claude_4_8_opus|clinician_original": 10,
+    "claude_4_8_opus|patient_rewrite": 10,
+    "claude_4_8_opus|role_only_isolation": 10,
+    "gemini_3_5_flash|clinician_original": 10,
+    "gemini_3_5_flash|patient_rewrite": 10,
+    "gemini_3_5_flash|role_only_isolation": 10,
+    "gpt_5_5|clinician_original": 10,
+    "gpt_5_5|patient_rewrite": 10,
+    "gpt_5_5|role_only_isolation": 10,
+    "grok_4_3|clinician_original": 10,
+    "grok_4_3|patient_rewrite": 10,
+    "grok_4_3|role_only_isolation": 10
+  },
+  "duplicate_responses": 120,
+  "inputs": {
+    "claude_4_8_opus": {
+      "batch_discount": 0.5,
+      "bytes": 10264247,
+      "key_name": "ANTHROPIC_API_KEY",
+      "model_id": "claude-opus-4-8",
+      "path": "batch_inputs/claude_4_8_opus.jsonl",
+      "provider": "anthropic",
+      "reasoning": "high",
+      "requests": 1320,
+      "sha256": "a514d7faa962cdcc1b08d421fb1c39eb17e945bd68caf6305f98e5d1320e29ed"
+    },
+    "gemini_3_5_flash": {
+      "batch_discount": 0.5,
+      "bytes": 10346087,
+      "key_name": "GOOGLE_API_KEY",
+      "model_id": "gemini-3.5-flash",
+      "path": "batch_inputs/gemini_3_5_flash.jsonl",
+      "provider": "google",
+      "reasoning": "HIGH",
+      "requests": 1320,
+      "sha256": "ef22ac02c531d84ae0923dc519cedecccc821323fe05103284c78561f987c8ba"
+    },
+    "gpt_5_5": {
+      "batch_discount": 0.5,
+      "bytes": 10332887,
+      "key_name": "OPENAI_API_KEY",
+      "model_id": "gpt-5.5",
+      "path": "batch_inputs/gpt_5_5.jsonl",
+      "provider": "openai",
+      "reasoning": "high",
+      "requests": 1320,
+      "sha256": "01dc77f70af58d510572ac474acdbd8102eaf0418dd1dd0617cb633e0aa71ec1"
+    },
+    "grok_4_3": {
+      "batch_discount": 0.2,
+      "bytes": 10375127,
+      "key_name": "XAI_API_KEY",
+      "model_id": "grok-4.3",
+      "path": "batch_inputs/grok_4_3.jsonl",
+      "provider": "xai",
+      "reasoning": "high",
+      "requests": 1320,
+      "sha256": "c1b997f2a459f76edbfe63732640ff5276e017dee4abf135e10a27d91f6042d8"
+    }
+  },
+  "prepared_at_utc": "2026-07-18T09:43:18.308783+00:00",
+  "protocol_version": "1.0",
+  "random_seed": 20260718,
+  "requests_per_judge": 1320,
+  "schema_sha256": "72a25fe2fa8631b0624c6cec275e04c80f13cb2f62cb890bf8bd021aeea33c59",
+  "source_csv": "/Users/koyarafrasyab/Documents/Codex/2026-07-08/yes-parts-of-it-definitely-exist/outputs/Research/audience_calibrated_medical_safety/completed_study/data/source/model_responses.csv",
+  "source_csv_sha256": "a2c69e6823c815b7029cf7b1f79b85ba1b43980290ce82ae334d98b404f62a88",
+  "source_responses": 1200,
+  "system_prompt_sha256": "06b1e8dd0c4e18ea8b45357e9c9b8d7fca24dc73d817e9e0b0542ad53d65f51a",
+  "total_requests": 5280
+}

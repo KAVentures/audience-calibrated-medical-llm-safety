@@ -1,0 +1,82 @@
+{
+  "analysis_at_utc": "2026-07-18T16:57:27.569382+00:00",
+  "seed": 20260718,
+  "bootstrap_replicates": 5000,
+  "primary_ratings": 4800,
+  "unique_responses": 1200,
+  "judges": [
+    "grok_4_3",
+    "gpt_5_5",
+    "gemini_3_5_flash",
+    "claude_4_8_opus"
+  ],
+  "models": [
+    "grok_4_3",
+    "gpt_5_5",
+    "gemini_3_5_flash",
+    "claude_4_8_opus"
+  ],
+  "prompt_versions": [
+    "clinician_original",
+    "role_only_isolation",
+    "patient_rewrite"
+  ],
+  "primary_tests": [
+    {
+      "outcome": "unsafe_binary",
+      "n_ratings": 4800,
+      "events": 25,
+      "panel_model_prompt_chi2": 14.413844650146224,
+      "panel_model_prompt_df": 3,
+      "panel_model_prompt_p": 0.0023926867315973497,
+      "three_way_chi2": 16.486684214453,
+      "three_way_df": 10,
+      "three_way_p": 0.08652243399850038,
+      "formula": "unsafe_binary ~ C(model_key)*C(prompt_version) + C(judge_key)*C(prompt_version) + C(model_key)*C(judge_key)",
+      "family": "gaussian_identity_risk_difference_fallback",
+      "fallback_reason": "non-finite logistic coefficients or covariance from separation",
+      "correlation": "exchangeable within topic; robust sandwich covariance",
+      "holm_p": 0.0047853734631946995,
+      "three_way_holm_p": 0.17304486799700075
+    },
+    {
+      "outcome": "evidence_sufficiency_failure",
+      "n_ratings": 4800,
+      "events": 102,
+      "panel_model_prompt_chi2": 6.257409974691168,
+      "panel_model_prompt_df": 6,
+      "panel_model_prompt_p": 0.39498133766968974,
+      "three_way_chi2": 14.814537756817021,
+      "three_way_df": 15,
+      "three_way_p": 0.46485715072260736,
+      "formula": "evidence_sufficiency_failure ~ C(model_key)*C(prompt_version) + C(judge_key)*C(prompt_version) + C(model_key)*C(judge_key)",
+      "family": "gaussian_identity_risk_difference_fallback",
+      "fallback_reason": "non-finite logistic coefficients or covariance from separation",
+      "correlation": "exchangeable within topic; robust sandwich covariance",
+      "holm_p": 0.39498133766968974,
+      "three_way_holm_p": 0.46485715072260736
+    }
+  ],
+  "overall_judge_prevalence": {
+    "claude_4_8_opus": {
+      "unsafe_binary": 0.0025,
+      "evidence_sufficiency_failure": 0.016666666666666666
+    },
+    "gemini_3_5_flash": {
+      "unsafe_binary": 0.0033333333333333335,
+      "evidence_sufficiency_failure": 0.010833333333333334
+    },
+    "gpt_5_5": {
+      "unsafe_binary": 0.015,
+      "evidence_sufficiency_failure": 0.0425
+    },
+    "grok_4_3": {
+      "unsafe_binary": 0.0,
+      "evidence_sufficiency_failure": 0.015
+    }
+  },
+  "overall_panel_prevalence": {
+    "unsafe_binary": 0.005208333333333333,
+    "evidence_sufficiency_failure": 0.02125
+  }
+}

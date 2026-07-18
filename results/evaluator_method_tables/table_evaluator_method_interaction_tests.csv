@@ -1,0 +1,7 @@
+method,method_label,outcome,events,estimating_model,wald_chi2,effective_df,raw_p,holm_p,status
+gpt_5_6_holistic,GPT-5.6 holistic,unsafe_binary,7,Logistic GEE,1.819995946791096,6,0.9354867606293068,1.0,Previously implemented stream-specific analysis; secondary here
+gpt_5_6_holistic,GPT-5.6 holistic,evidence_failure,21,Logistic GEE,1.8872328379615837,6,0.9297719876636664,1.0,Previously implemented stream-specific analysis; secondary here
+deterministic_engine,Deterministic scoring engine,unsafe_binary,256,Logistic GEE,35.65912062984739,6,3.2106568256450897e-06,6.421313651290179e-06,Previously implemented stream-specific analysis; secondary here
+deterministic_engine,Deterministic scoring engine,evidence_failure,57,Logistic GEE,10.61713106211121,6,0.1009550738905496,0.1009550738905496,Previously implemented stream-specific analysis; secondary here
+four_judge_panel,Four-judge panel,unsafe_binary,25,gaussian_identity_risk_difference_fallback,14.413844650146224,3,0.0023926867315973,0.0047853734631946,Post hoc identity-link fallback after logistic separation
+four_judge_panel,Four-judge panel,evidence_failure,102,gaussian_identity_risk_difference_fallback,6.257409974691168,6,0.3949813376696897,0.3949813376696897,Post hoc identity-link fallback after logistic separation

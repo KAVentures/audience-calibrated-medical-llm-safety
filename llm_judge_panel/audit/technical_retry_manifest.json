@@ -1,0 +1,59 @@
+{
+  "prepared_at_utc": "2026-07-18T09:53:13.686507+00:00",
+  "retries": {
+    "claude_4_8_opus": {
+      "count": 6,
+      "only_change": "none; identical retry after provider billing rejection",
+      "opaque_ids": [
+        "J000022",
+        "J000334",
+        "J000661",
+        "J000794",
+        "J000800",
+        "J000997"
+      ],
+      "path": "batch_inputs/technical_retries/claude_4_8_opus_retry.jsonl",
+      "sha256": "9823e2162f5b34d1810c7a8adee61954ad04c612bd1b51673a1a60f664c59c5d"
+    },
+    "gemini_3_5_flash": {
+      "count": 15,
+      "only_change": "max_output_tokens 4096 to 8192",
+      "opaque_ids": [
+        "J000002",
+        "J000075",
+        "J000131",
+        "J000157",
+        "J000276",
+        "J000290",
+        "J000423",
+        "J000745",
+        "J000780",
+        "J000919",
+        "J000994",
+        "J001173",
+        "J001204",
+        "J001219",
+        "J001235"
+      ],
+      "original_finish_reasons": {
+        "J000002": "MAX_TOKENS",
+        "J000075": "MAX_TOKENS",
+        "J000131": "MAX_TOKENS",
+        "J000157": "MAX_TOKENS",
+        "J000276": "MAX_TOKENS",
+        "J000290": "MAX_TOKENS",
+        "J000423": "RECITATION",
+        "J000745": "MAX_TOKENS",
+        "J000780": "MAX_TOKENS",
+        "J000919": "MAX_TOKENS",
+        "J000994": "MAX_TOKENS",
+        "J001173": "MAX_TOKENS",
+        "J001204": "MAX_TOKENS",
+        "J001219": "MAX_TOKENS",
+        "J001235": "MAX_TOKENS"
+      },
+      "path": "batch_inputs/technical_retries/gemini_3_5_flash_retry.jsonl",
+      "sha256": "24549d67f69945094196035f6840d7d379f485f4a374c603b70146a4237d3e84"
+    }
+  }
+}

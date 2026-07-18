@@ -1,0 +1,25 @@
+converged,n,events,error,formula,rater_stream,subset,outcome,wald_chi2,df,p_value,family,covariance
+False,1200.0,7.0,Fewer than 20 events; inferential test not estimated,unsafe_binary ~ C(model_key) * C(prompt_version),chatgpt,all,unsafe_binary,,,,,
+True,1200.0,21.0,,evidence_insufficient_or_overanswered ~ C(model_key) * C(prompt_version),chatgpt,all,evidence_insufficient_or_overanswered,1.8872328379615837,6.0,0.9297719876636664,binomial,exchangeable; topic-clustered robust SE
+False,754.0,6.0,Fewer than 20 events; inferential test not estimated,unsafe_binary ~ C(model_key) * C(prompt_version),chatgpt,original_complete_only,unsafe_binary,,,,,
+False,754.0,17.0,Fewer than 20 events; inferential test not estimated,evidence_insufficient_or_overanswered ~ C(model_key) * C(prompt_version),chatgpt,original_complete_only,evidence_insufficient_or_overanswered,,,,,
+False,900.0,7.0,Fewer than 20 events; inferential test not estimated,unsafe_binary ~ C(model_key) * C(prompt_version),chatgpt,exclude_same_provider,unsafe_binary,,,,,
+True,900.0,21.0,,evidence_insufficient_or_overanswered ~ C(model_key) * C(prompt_version),chatgpt,exclude_same_provider,evidence_insufficient_or_overanswered,2.0675117889754837,4.0,0.7233431016610812,binomial,exchangeable; topic-clustered robust SE
+False,800.0,4.0,Fewer than 20 events; inferential test not estimated,unsafe_binary ~ C(model_key) * C(prompt_version),chatgpt,exclude_role_only,unsafe_binary,,,,,
+False,800.0,15.0,Fewer than 20 events; inferential test not estimated,evidence_insufficient_or_overanswered ~ C(model_key) * C(prompt_version),chatgpt,exclude_role_only,evidence_insufficient_or_overanswered,,,,,
+False,1184.0,7.0,Fewer than 20 events; inferential test not estimated,unsafe_binary ~ C(model_key) * C(prompt_version),chatgpt,exclude_red_flag_prompts,unsafe_binary,,,,,
+True,1184.0,21.0,,evidence_insufficient_or_overanswered ~ C(model_key) * C(prompt_version),chatgpt,exclude_red_flag_prompts,evidence_insufficient_or_overanswered,1.6940364450980852,2.0,0.4286912901173425,binomial,exchangeable; topic-clustered robust SE
+False,1200.0,9.0,Fewer than 20 events; inferential test not estimated,unsafe_any_refusal ~ C(model_key) * C(prompt_version),chatgpt,unsafe_any_refusal,unsafe_binary,,,,,
+False,1200.0,7.0,Fewer than 20 events; inferential test not estimated,unsafe_without_refusal ~ C(model_key) * C(prompt_version),chatgpt,unsafe_without_refusal,unsafe_binary,,,,,
+True,1200.0,256.0,,unsafe_binary ~ C(model_key) * C(prompt_version),claude,all,unsafe_binary,35.65912062984739,6.0,3.2106568256450897e-06,binomial,exchangeable; topic-clustered robust SE
+True,1200.0,57.0,,evidence_insufficient_or_overanswered ~ C(model_key) * C(prompt_version),claude,all,evidence_insufficient_or_overanswered,10.61713106211121,6.0,0.10095507389054963,binomial,exchangeable; topic-clustered robust SE
+True,754.0,179.0,,unsafe_binary ~ C(model_key) * C(prompt_version),claude,original_complete_only,unsafe_binary,21.307542212146075,6.0,0.0016151581524737656,binomial,exchangeable; topic-clustered robust SE
+False,,,SVD did not converge,evidence_insufficient_or_overanswered ~ C(model_key) * C(prompt_version),claude,original_complete_only,evidence_insufficient_or_overanswered,,,,,
+True,900.0,195.0,,unsafe_binary ~ C(model_key) * C(prompt_version),claude,exclude_same_provider,unsafe_binary,20.235118690765617,4.0,0.0004487549605918315,binomial,exchangeable; topic-clustered robust SE
+False,,,Wald statistic is non-finite or negative,evidence_insufficient_or_overanswered ~ C(model_key) * C(prompt_version),claude,exclude_same_provider,evidence_insufficient_or_overanswered,,,,,
+True,800.0,188.0,,unsafe_binary ~ C(model_key) * C(prompt_version),claude,exclude_role_only,unsafe_binary,15.669614046921941,3.0,0.001325270096683149,binomial,exchangeable; topic-clustered robust SE
+True,800.0,36.0,,evidence_insufficient_or_overanswered ~ C(model_key) * C(prompt_version),claude,exclude_role_only,evidence_insufficient_or_overanswered,0.0,3.0,1.0,binomial,exchangeable; topic-clustered robust SE
+True,1184.0,256.0,,unsafe_binary ~ C(model_key) * C(prompt_version),claude,exclude_red_flag_prompts,unsafe_binary,35.954411317051566,6.0,2.8134394150910746e-06,binomial,exchangeable; topic-clustered robust SE
+True,1184.0,57.0,,evidence_insufficient_or_overanswered ~ C(model_key) * C(prompt_version),claude,exclude_red_flag_prompts,evidence_insufficient_or_overanswered,1.8438301659768586,3.0,0.6054437615679982,binomial,exchangeable; topic-clustered robust SE
+True,1200.0,263.0,,unsafe_any_refusal ~ C(model_key) * C(prompt_version),claude,unsafe_any_refusal,unsafe_binary,31.083671931572578,6.0,2.443363480847075e-05,binomial,exchangeable; topic-clustered robust SE
+True,1200.0,256.0,,unsafe_without_refusal ~ C(model_key) * C(prompt_version),claude,unsafe_without_refusal,unsafe_binary,35.65912062984739,6.0,3.2106568256450897e-06,binomial,exchangeable; topic-clustered robust SE

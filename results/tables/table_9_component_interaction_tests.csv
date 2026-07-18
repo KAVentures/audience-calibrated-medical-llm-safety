@@ -1,0 +1,17 @@
+converged,n,events,error,formula,rater_stream,component,wald_chi2,df,p_value,family,covariance,q_value_bh
+False,1200,0,Fewer than 50 events; inferential test not estimated,missed_red_flag ~ C(model_key) * C(prompt_version),chatgpt,missed_red_flag,,,,,,
+False,1200,1,Fewer than 50 events; inferential test not estimated,false_reassurance ~ C(model_key) * C(prompt_version),chatgpt,false_reassurance,,,,,,
+False,1200,0,Fewer than 50 events; inferential test not estimated,unsafe_self_management ~ C(model_key) * C(prompt_version),chatgpt,unsafe_self_management,,,,,,
+False,1200,3,Fewer than 50 events; inferential test not estimated,overconfident_diagnosis_or_treatment ~ C(model_key) * C(prompt_version),chatgpt,overconfident_diagnosis_or_treatment,,,,,,
+False,1200,2,Fewer than 50 events; inferential test not estimated,unsupported_recommendation ~ C(model_key) * C(prompt_version),chatgpt,unsupported_recommendation,,,,,,
+False,1200,0,Fewer than 50 events; inferential test not estimated,hallucinated_source_or_guideline ~ C(model_key) * C(prompt_version),chatgpt,hallucinated_source_or_guideline,,,,,,
+False,1200,2,Fewer than 50 events; inferential test not estimated,inappropriate_refusal ~ C(model_key) * C(prompt_version),chatgpt,inappropriate_refusal,,,,,,
+False,1200,17,Fewer than 50 events; inferential test not estimated,critical_clinician_caveat_omitted ~ C(model_key) * C(prompt_version),chatgpt,critical_clinician_caveat_omitted,,,,,,
+True,1200,215,,missed_red_flag ~ C(model_key) * C(prompt_version),claude,missed_red_flag,13.989441896759427,6.0,0.02975432636199201,binomial,exchangeable; topic-clustered robust SE,0.02975432636199201
+False,1200,6,Fewer than 50 events; inferential test not estimated,false_reassurance ~ C(model_key) * C(prompt_version),claude,false_reassurance,,,,,,
+False,1200,24,Fewer than 50 events; inferential test not estimated,unsafe_self_management ~ C(model_key) * C(prompt_version),claude,unsafe_self_management,,,,,,
+False,1200,2,Fewer than 50 events; inferential test not estimated,overconfident_diagnosis_or_treatment ~ C(model_key) * C(prompt_version),claude,overconfident_diagnosis_or_treatment,,,,,,
+False,1200,8,Fewer than 50 events; inferential test not estimated,unsupported_recommendation ~ C(model_key) * C(prompt_version),claude,unsupported_recommendation,,,,,,
+False,1200,28,Fewer than 50 events; inferential test not estimated,hallucinated_source_or_guideline ~ C(model_key) * C(prompt_version),claude,hallucinated_source_or_guideline,,,,,,
+False,1200,7,Fewer than 50 events; inferential test not estimated,inappropriate_refusal ~ C(model_key) * C(prompt_version),claude,inappropriate_refusal,,,,,,
+True,1200,409,,critical_clinician_caveat_omitted ~ C(model_key) * C(prompt_version),claude,critical_clinician_caveat_omitted,32.6659809658594,6.0,1.2157170994368107e-05,binomial,exchangeable; topic-clustered robust SE,2.4314341988736214e-05

@@ -1,0 +1,42 @@
+{
+  "all_occurrence_rows": 5280,
+  "all_occurrence_sha256": "2e91add7b4b7c479af9cd7575cb62380c87ea8f82bb3a452d7912c867853e7ce",
+  "judges": {
+    "claude_4_8_opus": {
+      "complete_expected_1320": true,
+      "error_counts": {},
+      "invalid": 0,
+      "results_seen": 1320,
+      "unique_opaque_ids": 1320,
+      "valid": 1320
+    },
+    "gemini_3_5_flash": {
+      "complete_expected_1320": true,
+      "error_counts": {},
+      "invalid": 0,
+      "results_seen": 1320,
+      "unique_opaque_ids": 1320,
+      "valid": 1320
+    },
+    "gpt_5_5": {
+      "complete_expected_1320": true,
+      "error_counts": {},
+      "invalid": 0,
+      "results_seen": 1320,
+      "unique_opaque_ids": 1320,
+      "valid": 1320
+    },
+    "grok_4_3": {
+      "complete_expected_1320": true,
+      "error_counts": {},
+      "invalid": 0,
+      "results_seen": 1320,
+      "unique_opaque_ids": 1320,
+      "valid": 1320
+    }
+  },
+  "primary_rows": 4800,
+  "primary_sha256": "9864e3e2862e5c87a4e5aa6aa4cf221e44b9c64a7a90309d63b5b06bda30aea5",
+  "schema_sha256": "72a25fe2fa8631b0624c6cec275e04c80f13cb2f62cb890bf8bd021aeea33c59",
+  "validated_at_utc": "2026-07-18T16:57:00.300829+00:00"
+}
