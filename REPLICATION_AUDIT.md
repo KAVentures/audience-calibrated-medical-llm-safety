@@ -20,8 +20,9 @@ it is **not** an independently physician-calibrated measure of actual harm.
   The interaction is therefore **judge-dependent**, not a stable clinical
   audience effect established across judges.
 - The independent physician reference standard is absent. Ten examples
-  scored by the physician author for an exploratory AI-calibrated stream
-  cannot establish clinical sensitivity, specificity or model ranking.
+  discussed by the author and an AI assistant for an exploratory scoring
+  stream do not establish physician-only rating provenance and cannot
+  establish clinical sensitivity, specificity or model ranking.
 - 446/1,200 final responses were regenerated under frozen technical criteria
   following truncation; the regeneration was highly uneven (GPT 148,
   Gemini 271, Claude 27, Grok 0). The original/ replacement lineage is
