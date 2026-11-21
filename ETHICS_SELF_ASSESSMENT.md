@@ -14,10 +14,10 @@ were sourced from an existing public release and remain subject to that
 dataset's governance and licence. The study did not attempt re-identification.
 
 The primary panel consisted of four LLM judges, with blinded prompt/response
-inputs and no newly recruited physician rating panel. The author, a physician,
-reports manually rating ten examples used for an exploratory
-physician-calibrated AI-assisted evaluator. These are **not independent
-clinician-validation data** and cannot supply a human clinical reference
+inputs and no newly recruited physician rating panel. The physician author
+participated in an AI-assisted discussion of ten example ratings. Neither
+independent physician-scored labels nor the exact extrapolation prompt
+were preserved. These are **not independent clinician-validation data** and cannot supply a human clinical reference
 standard. The author is also a human contributor to the research process,
 so descriptions such as "no human participants" refer to the absence of
 recruited study subjects, not an absence of any human expert input.
