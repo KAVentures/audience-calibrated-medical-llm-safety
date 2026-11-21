@@ -6,6 +6,7 @@ import json
 from collections import Counter
 
 from common import AUDIT_DIR, INSTRUMENT_DIR, MODEL_CONFIG, PANEL_ROOT, RAW_DIR, sha256_file, utc_now, write_json
+from panel_identity import audit_judge_identities, check_blinding_key
 
 
 TOP_KEYS = {
@@ -164,7 +165,7 @@ PARSERS = {
 def main() -> None:
     key_path = AUDIT_DIR / "blinding_key_do_not_share_with_judges.csv"
     with key_path.open(newline="", encoding="utf-8") as handle:
-        blind = {row["opaque_id"]: row for row in csv.DictReader(handle)}
+        blind = check_blinding_key(list(csv.DictReader(handle)))
     output_dir = PANEL_ROOT / "data" / "processed"
     output_dir.mkdir(parents=True, exist_ok=True)
     records = []
@@ -172,10 +173,11 @@ def main() -> None:
     for judge_key, parser in PARSERS.items():
         parsed_count = valid_count = 0
         error_counts = Counter()
-        ids = set()
+        parsed_ids = []
+        valid_ids = []
         for opaque_id, text, metadata in parser():
             parsed_count += 1
-            ids.add(opaque_id)
+            parsed_ids.append(opaque_id)
             try:
                 judgment = json.loads(text)
                 errors = validate(judgment)
@@ -185,7 +187,11 @@ def main() -> None:
             if errors:
                 error_counts.update(errors)
                 continue
+            if opaque_id not in blind:
+                error_counts.update(["unexpected_opaque_id"])
+                continue
             valid_count += 1
+            valid_ids.append(opaque_id)
             link = blind[opaque_id]
             flat = {
                 "judge_key": judge_key,
@@ -207,12 +213,17 @@ def main() -> None:
             records.append(flat)
         report["judges"][judge_key] = {
             "results_seen": parsed_count,
-            "unique_opaque_ids": len(ids),
             "valid": valid_count,
             "invalid": parsed_count - valid_count,
             "error_counts": dict(error_counts),
-            "complete_expected_1320": parsed_count == 1320 and len(ids) == 1320,
+            **audit_judge_identities(blind, parsed_ids, valid_ids),
         }
+
+    # Fail closed *before* publishing analysis-ready outputs. Count equality alone
+    # cannot establish that every frozen opaque ID was evaluated exactly once.
+    if not all(item["complete_expected_1320"] for item in report["judges"].values()):
+        write_json(AUDIT_DIR / "judge_result_validation_report.json", report)
+        raise SystemExit("Judge panel failed frozen opaque-ID/occurrence coverage audit")
 
     if records:
         path = output_dir / "llm_judge_ratings_all_occurrences.csv"
@@ -232,8 +243,6 @@ def main() -> None:
         report["primary_sha256"] = sha256_file(ppath)
     write_json(AUDIT_DIR / "judge_result_validation_report.json", report)
     print(json.dumps(report, indent=2))
-    if not all(item["valid"] == 1320 for item in report["judges"].values()):
-        raise SystemExit("Panel is incomplete or has invalid outputs")
 
 
 if __name__ == "__main__":
