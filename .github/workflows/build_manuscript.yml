@@ -23,6 +23,7 @@ jobs:
           sudo apt-get install -y libreoffice-writer poppler-utils
       - name: Rebuild Word and PDF documents from source Markdown
         run: |
+          python scripts/check_document_map.py
           python scripts/03_build_documents.py
           libreoffice -env:UserInstallation=file:///tmp/lo-research-build --headless --convert-to pdf --outdir manuscript manuscript/audience_calibrated_medical_safety_manuscript.docx manuscript/audience_calibrated_medical_safety_medrxiv.docx manuscript/audience_calibrated_medical_safety_JAMIA.docx manuscript/audience_calibrated_medical_safety_supplement.docx
           libreoffice -env:UserInstallation=file:///tmp/lo-ethics-build --headless --convert-to pdf --outdir . ETHICS_SELF_ASSESSMENT.docx

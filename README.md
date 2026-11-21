@@ -25,7 +25,10 @@ Large language models increasingly judge other models' medical answers. This stu
 - [Replication and scientific limitations audit](REPLICATION_AUDIT.md)
 - [Frozen panel identity-validator tests](llm_judge_panel/IDENTITY_VALIDATION.md)
 - [Ethics self-assessment](ETHICS_SELF_ASSESSMENT.md)
+- [Document map: canonical sources, mirrors, generated PDFs, and historical notes](DOCUMENT_MAP.md)
 - [JAMIA submission files](#jamia-submission-materials)
+
+**Document organization:** `manuscript/manuscript.md` is the authoritative paper text (mirrored in `PAPER.md`), `SUPPLEMENT.md` is the authoritative supplement (mirrored for the document builder), and `ETHICS_SELF_ASSESSMENT.md` is the sole current study-specific ethics statement. Older notes remain for provenance. The Word/PDF files are generated publication artifacts, not independent drafts. See [DOCUMENT_MAP.md](DOCUMENT_MAP.md).
 
 ## Study at a glance
 
