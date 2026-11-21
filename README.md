@@ -50,7 +50,7 @@ Every topic was crossed with all three prompt formulations and all four response
 - The planned logistic interaction model was non-estimable because of structural zeros. A post hoc identity-link model detected a generator-by-prompt interaction for unsafe ratings (Holm-adjusted `P=.0048`).
 - After GPT-5.5 was excluded, seven unsafe events remained and the interaction was not detected (`P=.11`).
 - Pairwise unsafe Cohen kappa was 0.00-0.28 despite 98.5%-99.8% exact agreement.
-- Physician-calibrated holistic GPT-5.6 scoring classified 7/1,200 responses unsafe (0.58%); a deterministic risk-averse text-feature engine classified 256/1,200 (21.33%). Their interaction conclusions differed.
+- Author-guided AI-assisted holistic GPT-5.6 scoring classified 7/1,200 responses unsafe (0.58%); a deterministic risk-averse text-feature engine classified 256/1,200 (21.33%). Their interaction conclusions differed.
 - The GPT-labelled and Claude-labelled deterministic-engine workbooks were exact duplicates, representing repeated rule execution rather than independent corroboration.
 
 These are evaluator-assigned outcomes, not clinical prevalence estimates or a physician reference standard. The study does **not** establish which generator is clinically safest.
