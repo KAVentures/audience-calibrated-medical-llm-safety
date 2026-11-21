@@ -18,4 +18,4 @@ Evaluator specification changed estimated prevalence and the apparent audience i
 
 ### Conclusion
 
-Evaluator specification should be treated as part of the intervention in medical LLM safety studies. Comparative claims require evaluator-specific reporting and independent physician validation.
+Evaluator specification materially changed assigned safety prevalence and the apparent audience-by-model interaction in the same responses. This demonstrates measurement instability, not verified clinical harm or a validated model ranking; independent reference adjudication is required for comparative clinical-safety claims.
