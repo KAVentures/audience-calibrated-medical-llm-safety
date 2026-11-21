@@ -127,7 +127,7 @@ A clinically interpretable extension should use two independent physicians ratin
 
 ## S13. Submission checks
 
-- Retain the written self-assessment documenting why ethical review was not required under the Swedish Ethical Review Act (2003:460).
+- Retain the investigator's study-specific ethical-review self-assessment under the Swedish Ethical Review Act (2003:460), while explicitly stating that no formal authority or institutional determination was obtained.
 - Confirm the author's full affiliation address and credentials.
 - Verify provider and dataset terms before public redistribution.
 - Archive a public version without API keys, local blinding keys if inappropriate, or provider credentials.
