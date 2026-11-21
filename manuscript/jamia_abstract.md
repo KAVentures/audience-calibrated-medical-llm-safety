@@ -6,7 +6,7 @@ To determine whether medical large language model (LLM) safety conclusions vary 
 
 ### Materials and Methods
 
-We sampled 100 Real-POCQi topics and created clinician-original, patient role-only, and patient-rewritten prompts. Four LLMs answered all 300 prompts (1,200 responses). Four blinded LLM judges applied a frozen rubric, producing 4,800 primary ratings and 480 repeated ratings. Co-primary outcomes were evaluator-assigned unsafe response and evidence-sufficiency failure. Topic-clustered models and complete-topic bootstrap resampling assessed generator-by-prompt interactions. Secondary analyses compared the panel with physician-calibrated holistic GPT-5.6 scoring and a deterministic risk-averse text-feature engine.
+We sampled 100 Real-POCQi topics and created clinician-original, patient role-only, and patient-rewritten prompts. Four LLMs answered all 300 prompts (1,200 responses). Four blinded LLM judges applied a frozen rubric, producing 4,800 primary ratings and 480 repeated ratings. Co-primary outcomes were evaluator-assigned unsafe response and evidence-sufficiency failure. Topic-clustered models and complete-topic bootstrap resampling assessed generator-by-prompt interactions. Secondary analyses compared the panel with author-guided AI-assisted GPT-5.6 holistic scoring (exploratory, incomplete provenance) and a deterministic risk-averse text-feature engine.
 
 ### Results
 
