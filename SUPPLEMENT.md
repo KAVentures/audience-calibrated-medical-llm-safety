@@ -105,7 +105,7 @@ All exact cell rates and confidence intervals are in `results/llm_judge_panel_ta
 
 ## S10. Secondary evaluator-method comparison
 
-Before the four-judge panel was run, the author supplied three completed workbooks over the same 1,200 blinded responses. One used a holistic GPT-5.6 process reportedly calibrated from ten physician-scored examples. The ten examples were not marked, and the exact extrapolation prompt and complete model-execution logs were not retained. It is therefore a physician-calibrated AI-assisted evaluator stream, not a physician reference standard.
+Before the four-judge panel was run, the author supplied three completed workbooks over the same 1,200 blinded responses. One used a holistic GPT-5.6 process reportedly calibrated from ten examples discussed in an author-guided AI-assisted scoring session. The ten examples were not marked, and the exact extrapolation prompt and complete model-execution logs were not retained. It is therefore an author-guided AI-assisted exploratory evaluator stream, not a physician reference standard.
 
 The other two workbooks were labelled as Claude and GPT applications of the same risk-averse scoring logic. The supplied Python engine used regular expressions for warning signs, clinician caveats, uncertainty, dose directives, reassurance, refusals, named sources with specific figures, and selected patient-facing terminology. Its documentation explicitly stated that it could not verify clinical truth. Field-level audit found exact agreement on all 15 scored fields and all 1,200 rationales for all 1,200 responses. The two workbooks are therefore counted once as one deterministic evaluator specification.
 
