@@ -22,6 +22,8 @@ Large language models increasingly judge other models' medical answers. This stu
 - [Statistical analysis plan](protocol/statistical_analysis_plan.md)
 - [Frozen LLM-judge protocol](protocol/llm_judge_panel_protocol_20260718.md)
 - [Execution audit](llm_judge_panel/audit/final_execution_report_20260718.md)
+- [Replication and scientific limitations audit](REPLICATION_AUDIT.md)
+- [Frozen panel identity-validator tests](llm_judge_panel/IDENTITY_VALIDATION.md)
 - [Ethics self-assessment](ETHICS_SELF_ASSESSMENT.md)
 - [JAMIA submission files](#jamia-submission-materials)
 
