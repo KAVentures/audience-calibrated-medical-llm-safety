@@ -1,10 +1,10 @@
 # Evaluator-dependent conclusions in audience-calibrated medical LLM safety assessment: a paired multi-model benchmark study
 
-Koyar Afrasyab, MD^1^
+Koyar Afrasyab, M.D.^1^
 
 ^1^ Kinvectum AB, Sweden
 
-Correspondence: Koyar Afrasyab, Kinvectum AB; koyar@kinvectum.com  
+Correspondence: Koyar Afrasyab, M.D., Kinvectum AB; koyar@kinvectum.com  
 ORCID: 0009-0009-3530-4606
 
 ## Abstract
@@ -29,6 +29,8 @@ The panel assigned 25/4,800 ratings unsafe (0.52%) and 102/4,800 evidence-insuff
 
 Evaluator specification materially altered assigned harm prevalence and the apparent audience-by-model interaction on identical responses. The four-LLM panel exposed measurement instability, especially the concentration of positive events in one judge, but could not determine clinical correctness. Clinical-safety comparisons require calibrated reference evidence in addition to evaluator-specific reporting.
 
+**Keywords:** clinical artificial intelligence; LLM-as-judge; evaluator dependence; audience calibration; medical safety; evidence sufficiency; reproducibility.
+
 ## Introduction
 
 Large language models encode substantial clinical knowledge and are increasingly used for professional decision support and public health questions.[1,2] Their evaluation has expanded from examinations to consumer advice, real clinical queries, and simulated care interactions.[3-7] These settings impose different safety requirements. Clinicians may need differential diagnosis, treatment detail, and explicit assumptions; patients may need plain language, uncertainty calibration, warning signs, and protection against unsupported self-management. Safety is therefore relational: it depends on the answer, the evidence supplied, the intended user, and the actions that reasonable reliance could produce.
@@ -37,7 +39,7 @@ Most medical LLM benchmarks fix one audience. Real-POCQi and related real-query 
 
 Evaluator choice creates a second and potentially larger source of variation. LLM judges permit complete, rapid scoring but are susceptible to threshold, verbosity, self-preference, and other biases.[8-10] Medical safety also presents a prevalence problem: high exact agreement can coexist with poor chance-corrected agreement when positive events are rare. Moreover, a composite can give the same headline label to opposite mechanisms, such as inappropriate refusal and overconfident management. A deterministic rule engine may be reproducible yet clinically invalid if it treats lexical signals as equivalent to correct reasoning.
 
-We therefore used audience calibration as a controlled test case for evaluator sensitivity. The primary analysis asked whether unsafe and evidence-sufficiency ratings varied across generator models and prompt formulations in a fully crossed four-LLM judge panel. The secondary methodological analysis asked whether the prevalence and interaction conclusion persisted under two previously supplied evaluator specifications: holistic GPT scoring calibrated on physician examples and a risk-averse deterministic scoring engine. We did not treat any LLM, rule set, or vote threshold as clinical ground truth.
+We therefore used audience calibration as a controlled test case for evaluator sensitivity. The primary analysis asked whether unsafe and evidence-sufficiency ratings varied across generator models and prompt formulations in a fully crossed four-LLM judge panel. The secondary methodological analysis asked whether prevalence estimates and interaction conclusions persisted under two previously supplied evaluator specifications: an exploratory author-guided, AI-assisted holistic GPT-5.6 scoring stream with incompletely documented calibration, and a deterministic risk-averse text-feature engine. These secondary streams were not independent physician reference standards. We did not treat any LLM, rule set, or vote threshold as clinical ground truth.
 
 ## Methods
 
@@ -177,6 +179,8 @@ Holistic LLM review has the opposite vulnerability: it can integrate context but
 
 Real-POCQi and other clinician-query studies demonstrate the value of ecologically grounded questions and physician evaluation.[4,5] Patient-facing studies show that clinically knowledgeable models can still provide unsafe advice when the user context changes.[6,7] Our findings connect these literatures by showing that audience and evaluator must be considered jointly. They also extend general LLM-as-judge evidence: self-preference and evaluator bias are not merely ranking nuisances in medicine, because they can determine which responses cross a harm threshold.[8-10]
 
+Two related investigations by the same author, posted after the present analysis freeze, provide complementary evidence rather than independent replication of these outcomes. An evidence-sufficiency prompting experiment found that judge choice changed the estimated size of safety gains and that helpfulness costs varied across models, with a separate clinician review of selected judgments.[17] A missing-information stress test of open-ended medical conversations found a same-provider scoring association and differences between LLM-judge and clinician assessments.[18] The present study instead crosses intended audience with generator identity and compares substantially different evaluator specifications applied to the **same fixed responses**. Human labels from the other studies do not validate this study's outcomes; overlapping model families or sources do not make the three experiments independent replications.
+
 The contrast between high repeatability and low validity is particularly important. Repeat testing showed that each judge was stable, yet judges differed substantially in positive prevalence and component use. Reliability is necessary for measurement but cannot establish that the measured construct corresponds to clinically meaningful harm. DECIDE-AI and FUTURE-AI similarly emphasise context, human factors, and evidence appropriate to the intended deployment setting.[11,16]
 
 ### Implications
@@ -231,3 +235,5 @@ The replication package contains all 300 prompts, 1,200 final responses, generat
 14. Cohen J. A coefficient of agreement for nominal scales. *Educ Psychol Meas*. 1960;20:37-46. doi:10.1177/001316446002000104.
 15. Gwet KL. Computing inter-rater reliability and its variance in the presence of high agreement. *Br J Math Stat Psychol*. 2008;61:29-48. doi:10.1348/000711006X126600.
 16. Lekadir K, Frangi AF, Porras AR, et al. FUTURE-AI: international consensus guideline for trustworthy and deployable artificial intelligence in healthcare. *BMJ*. 2025;388:e081554. doi:10.1136/bmj-2024-081554.
+17. Afrasyab K. Judge-dependent safety gains and model-specific helpfulness costs of evidence-sufficiency prompting in clinical LLMs. *arXiv* [preprint]. 2026;arXiv:2607.18086. doi:10.48550/arXiv.2607.18086.
+18. Afrasyab K. Evaluating medical AI under missing information: same-provider judges and human raters change apparent safety. *arXiv* [preprint]. 2026;arXiv:2607.18828. doi:10.48550/arXiv.2607.18828.
