@@ -109,7 +109,8 @@ def configure_document(doc, running_title):
 
     styles = doc.styles
     normal = styles["Normal"]
-    normal.font.name = "Calibri"
+    normal.font.name = "Times New Roman"
+    normal.font.color.rgb = RGBColor(0, 0, 0)
     normal.font.size = Pt(11)
     normal.paragraph_format.space_before = Pt(0)
     normal.paragraph_format.space_after = Pt(8)
@@ -117,21 +118,21 @@ def configure_document(doc, running_title):
     normal.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.LEFT
 
     title = styles["Title"]
-    title.font.name = "Calibri"
-    title.font.size = Pt(22)
+    title.font.name = "Times New Roman"
+    title.font.size = Pt(17)
     title.font.bold = True
-    title.font.color.rgb = RGBColor(20, 35, 45)
+    title.font.color.rgb = RGBColor(0, 0, 0)
     title.paragraph_format.space_before = Pt(0)
     title.paragraph_format.space_after = Pt(12)
-    title.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.LEFT
+    title.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.CENTER
 
     for name, size, color, before, after in (
-        ("Heading 1", 16, BLUE, 18, 10),
-        ("Heading 2", 13, BLUE, 12, 6),
-        ("Heading 3", 12, DARK_BLUE, 8, 4),
+        ("Heading 1", 15, RGBColor(0, 0, 0), 16, 8),
+        ("Heading 2", 12, RGBColor(0, 0, 0), 10, 5),
+        ("Heading 3", 11, RGBColor(0, 0, 0), 8, 4),
     ):
         style = styles[name]
-        style.font.name = "Calibri"
+        style.font.name = "Times New Roman"
         style.font.size = Pt(size)
         style.font.bold = True
         style.font.color.rgb = color
@@ -141,7 +142,7 @@ def configure_document(doc, running_title):
 
     for name in ("List Bullet", "List Number"):
         style = styles[name]
-        style.font.name = "Calibri"
+        style.font.name = "Times New Roman"
         style.font.size = Pt(11)
         style.paragraph_format.left_indent = Inches(0.375)
         style.paragraph_format.first_line_indent = Inches(-0.194)
@@ -152,9 +153,9 @@ def configure_document(doc, running_title):
         cap = styles.add_style("Figure Caption", WD_STYLE_TYPE.PARAGRAPH)
     else:
         cap = styles["Figure Caption"]
-    cap.font.name = "Calibri"
+    cap.font.name = "Times New Roman"
     cap.font.size = Pt(9)
-    cap.font.color.rgb = MUTED
+    cap.font.color.rgb = RGBColor(0, 0, 0)
     cap.paragraph_format.space_before = Pt(4)
     cap.paragraph_format.space_after = Pt(10)
     cap.paragraph_format.keep_with_next = False
@@ -162,13 +163,13 @@ def configure_document(doc, running_title):
     header = section.header.paragraphs[0]
     header.text = running_title
     header.alignment = WD_ALIGN_PARAGRAPH.LEFT
-    header.runs[0].font.name = "Calibri"
+    header.runs[0].font.name = "Times New Roman"
     header.runs[0].font.size = Pt(8.5)
     header.runs[0].font.color.rgb = MUTED
     footer = section.footer.paragraphs[0]
     footer.alignment = WD_ALIGN_PARAGRAPH.RIGHT
     run = footer.add_run("Page ")
-    run.font.name = "Calibri"
+    run.font.name = "Times New Roman"
     run.font.size = Pt(8.5)
     run.font.color.rgb = MUTED
     add_page_field(footer)
@@ -384,12 +385,12 @@ def add_title_block(doc):
     add_inline_markup(p, title)
     p = doc.add_paragraph()
     p.paragraph_format.space_after = Pt(3)
-    run = p.add_run("Koyar Afrasyab, MD")
+    run = p.add_run("Koyar Afrasyab, M.D.")
     run.bold = True
     run.font.size = Pt(12)
     p = doc.add_paragraph("Kinvectum AB, Sweden")
     p.paragraph_format.space_after = Pt(3)
-    p = doc.add_paragraph("Correspondence: Koyar Afrasyab | koyar@kinvectum.com | ORCID 0009-0009-3530-4606")
+    p = doc.add_paragraph("Correspondence: Koyar Afrasyab, M.D. | koyar@kinvectum.com | ORCID 0009-0009-3530-4606")
     p.paragraph_format.space_after = Pt(14)
     p.runs[0].font.color.rgb = MUTED
     p.runs[0].font.size = Pt(9.5)
@@ -401,9 +402,9 @@ def add_submission_title_block(doc):
     p = doc.add_paragraph(style="Title")
     add_inline_markup(p, title)
     for text, bold in (
-        ("Koyar Afrasyab, MD", True),
+        ("Koyar Afrasyab, M.D.", True),
         ("Affiliation: Kinvectum AB, Sweden", False),
-        ("Correspondence: Koyar Afrasyab, Kinvectum AB; koyar@kinvectum.com", False),
+        ("Correspondence: Koyar Afrasyab, M.D., Kinvectum AB; koyar@kinvectum.com", False),
         ("ORCID: 0009-0009-3530-4606", False),
         (f"Running title: {JAMIA_RUNNING_TITLE}", False),
         ("Main-text word count: 3,732", False),
@@ -557,7 +558,7 @@ def build_main():
     lines = (MANUSCRIPT / "manuscript.md").read_text().splitlines()
     body_start = next(i for i, line in enumerate(lines) if line == "## Abstract")
     append_markdown(doc, lines=lines[body_start:], marker_callback=lambda target, marker: add_figure_block(target, marker))
-    add_result_tables(doc)
+    add_result_tables(doc, plain=True)
     doc.core_properties.title = "Evaluator-dependent conclusions in audience-calibrated medical LLM safety assessment"
     doc.core_properties.author = "Koyar Afrasyab"
     doc.core_properties.subject = "Paired medical LLM benchmark study"
