@@ -22,8 +22,13 @@ Large language models increasingly judge other models' medical answers. This stu
 - [Statistical analysis plan](protocol/statistical_analysis_plan.md)
 - [Frozen LLM-judge protocol](protocol/llm_judge_panel_protocol_20260718.md)
 - [Execution audit](llm_judge_panel/audit/final_execution_report_20260718.md)
+- [Replication and scientific limitations audit](REPLICATION_AUDIT.md)
+- [Frozen panel identity-validator tests](llm_judge_panel/IDENTITY_VALIDATION.md)
 - [Ethics self-assessment](ETHICS_SELF_ASSESSMENT.md)
+- [Document map: canonical sources, mirrors, generated PDFs, and historical notes](DOCUMENT_MAP.md)
 - [JAMIA submission files](#jamia-submission-materials)
+
+**Document organization:** `manuscript/manuscript.md` is the authoritative paper text (mirrored in `PAPER.md`), `SUPPLEMENT.md` is the authoritative supplement (mirrored for the document builder), and `ETHICS_SELF_ASSESSMENT.md` is the sole current study-specific ethics statement. Older notes remain for provenance. The Word/PDF files are generated publication artifacts, not independent drafts. See [DOCUMENT_MAP.md](DOCUMENT_MAP.md).
 
 ## Study at a glance
 
@@ -48,7 +53,7 @@ Every topic was crossed with all three prompt formulations and all four response
 - The planned logistic interaction model was non-estimable because of structural zeros. A post hoc identity-link model detected a generator-by-prompt interaction for unsafe ratings (Holm-adjusted `P=.0048`).
 - After GPT-5.5 was excluded, seven unsafe events remained and the interaction was not detected (`P=.11`).
 - Pairwise unsafe Cohen kappa was 0.00-0.28 despite 98.5%-99.8% exact agreement.
-- Physician-calibrated holistic GPT-5.6 scoring classified 7/1,200 responses unsafe (0.58%); a deterministic risk-averse text-feature engine classified 256/1,200 (21.33%). Their interaction conclusions differed.
+- Author-guided AI-assisted holistic GPT-5.6 scoring classified 7/1,200 responses unsafe (0.58%); a deterministic risk-averse text-feature engine classified 256/1,200 (21.33%). Their interaction conclusions differed.
 - The GPT-labelled and Claude-labelled deterministic-engine workbooks were exact duplicates, representing repeated rule execution rather than independent corroboration.
 
 These are evaluator-assigned outcomes, not clinical prevalence estimates or a physician reference standard. The study does **not** establish which generator is clinically safest.

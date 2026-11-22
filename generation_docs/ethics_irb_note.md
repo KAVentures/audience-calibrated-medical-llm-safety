@@ -1,3 +1,5 @@
+> **Archived assessment note — superseded for current manuscript reporting.** This dated working note is retained to preserve the research record. The single authoritative, study-specific assessment is [`ETHICS_SELF_ASSESSMENT.md`](../ETHICS_SELF_ASSESSMENT.md); its later clarifications take precedence. This note does not establish a formal authority determination or independently verified human-review data.
+
 # Written Ethics Self-Assessment
 
 ## Study assessed
