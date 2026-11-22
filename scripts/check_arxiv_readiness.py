@@ -33,7 +33,7 @@ def source_checks():
         assert "arXiv:" + identifier in paper
     heading_order = ["## Abstract", "## Introduction", "## Methods",
                      "## Results", "## Discussion", "## Declarations", "## References"]
-    offsets = [paper.index(h) for h in heading_order]
+    offsets = [paper.index("\n" + h + "\n") for h in heading_order]
     assert offsets == sorted(offsets), "core paper sections out of order"
     reference_numbers = [int(v) for v in re.findall(r"^([0-9]+)\. [^\n]+$", paper.split("## References", 1)[1], re.M)]
     assert reference_numbers == list(range(1, 19)), "expected contiguous 1–18 references"
