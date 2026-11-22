@@ -58,6 +58,15 @@ Every topic was crossed with all three prompt formulations and all four response
 
 These are evaluator-assigned outcomes, not clinical prevalence estimates or a physician reference standard. The study does **not** establish which generator is clinically safest.
 
+## Relation to earlier preprints
+
+This is a **distinct audience-framing and evaluator-specification experiment** on fixed responses. Two related papers by the same author address different experimental questions:
+
+- [Evidence-sufficiency prompting and judge-dependent safety gains](https://arxiv.org/abs/2607.18086) tests a paired prompting intervention and its model-specific helpfulness costs, with a separate clinician-anchored review.
+- [Medical AI under missing information](https://arxiv.org/abs/2607.18828) studies robustness to removed clinical information, same-provider judge effects and clinician–LLM assessment differences.
+
+The studies are related but **not independent replications** of one another. This repo specifically studies how intended audience, generator identity and evaluator specification change classification of the **same 1,200 responses**; related studies' human-review labels are not a reference standard for these responses.
+
 ## Repository contents
 
 ```text
@@ -99,7 +108,7 @@ python -m pip install -r requirements.txt
 
 The runner validates all archived judge outputs, audits the three evaluator workbooks, reruns the complete-topic bootstraps and topic-clustered models, rebuilds tables and figures, regenerates the Word manuscripts, and exports the JAMIA TIFF files. The analysis uses seed `20260718` and 5,000 complete-topic bootstrap resamples.
 
-PDF regeneration additionally requires LibreOffice. Committed PDFs are supplied so the statistical reproduction path does not depend on office software.
+PDF regeneration additionally requires LibreOffice. Committed PDFs are supplied so the statistical reproduction path does not depend on office software. The arXiv-facing paper uses a conventional serif layout and standardized author credentials (**Koyar Afrasyab, M.D.**). The latest paper/source hashes are recorded in `ARXIV_RELEASE_MANIFEST.json` after CI regeneration; the legacy `PUBLIC_RELEASE_MANIFEST.sha256` records an **earlier archival freeze**, not the present submission checksum. Run `python scripts/check_arxiv_readiness.py` and inspect the PDF before submitting.
 
 ## Model execution record
 
@@ -135,7 +144,7 @@ No API keys are included. No patients or other human participants were recruited
 - The LLM judge panel is not a clinical reference standard.
 - Unsafe events were sparse and concentrated within one judge.
 - Role-only prompts isolate an audience signal but are less natural than patient rewrites; patient rewrites also change wording and specificity.
-- The physician-calibrated holistic stream lacked complete execution logs and identified calibration rows.
+- The exploratory author-guided, AI-assisted holistic scoring stream lacked preserved calibration rows and complete execution logs; it is not independent physician validation.
 - Model behavior is version- and date-dependent; returned identifiers and run dates are therefore part of the result.
 
 ## Citation

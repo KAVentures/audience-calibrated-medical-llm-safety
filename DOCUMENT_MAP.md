@@ -21,3 +21,7 @@ This repository deliberately contains original research inputs, dated protocol/a
 5. Visually inspect the generated PDFs and check final manuscript content before publication. A passing source check does not establish PDF freshness or scientific validity.
 
 No scientific data or primary analysis code should be deleted as part of this document-organization cleanup.
+
+## arXiv-facing presentation release
+
+The principal PDF `PAPER.pdf` is derived from `manuscript/manuscript.md`; the JAMIA-specific submission remains a distinct format. `ARXIV_RELEASE_MANIFEST.json` is a deterministic, up-to-date source/derivative checksum list generated after the latest build. The older `PUBLIC_RELEASE_MANIFEST.sha256` and `REPRODUCIBILITY_MANIFEST.json` are preserved as **historical research freezes**, not overwritten or represented as new provenance records.

@@ -14,3 +14,5 @@ jobs:
       - run: python -m unittest discover -s tests -v
       - run: python scripts/check_research_integrity.py
       - run: python scripts/check_document_map.py
+      - run: python scripts/check_arxiv_readiness.py
+      - run: python -m py_compile scripts/03_build_documents.py scripts/check_arxiv_readiness.py scripts/build_arxiv_release_manifest.py

@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "purpose": "current derived submission artifact inventory, not the frozen analysis input manifest",
+  "research_analysis_freeze": "2026-07-18",
+  "source_files": [
+    {
+      "path": "manuscript/manuscript.md",
+      "bytes": 36545,
+      "sha256": "5042a9dca3b4fd48dbf96590b8771b7a0cac99c76d865c2d4ed04d6abc12ddc8"
+    },
+    {
+      "path": "PAPER.md",
+      "bytes": 36545,
+      "sha256": "5042a9dca3b4fd48dbf96590b8771b7a0cac99c76d865c2d4ed04d6abc12ddc8"
+    },
+    {
+      "path": "SUPPLEMENT.md",
+      "bytes": 13895,
+      "sha256": "6081e1482ab4cee902725f948d2d71ee3c38f777d49b782395376e71df0df69e"
+    },
+    {
+      "path": "manuscript/supplement.md",
+      "bytes": 13895,
+      "sha256": "6081e1482ab4cee902725f948d2d71ee3c38f777d49b782395376e71df0df69e"
+    },
+    {
+      "path": "ETHICS_SELF_ASSESSMENT.md",
+      "bytes": 2831,
+      "sha256": "1de0c8a201f3f84650bad00d451f10cd4b92addd2f7ad7818cfa2428233c2344"
+    },
+    {
+      "path": "CITATION.cff",
+      "bytes": 730,
+      "sha256": "6fb3501e4dca641a8f8860a0aee2963682434cea70d3bf86bbb2ba758d168d6d"
+    },
+    {
+      "path": "REPLICATION_AUDIT.md",
+      "bytes": 3791,
+      "sha256": "e02dacdfc0777fad30927b6d4f1af8ab8605272438334deaf33077557ba6d8a2"
+    },
+    {
+      "path": "scripts/03_build_documents.py",
+      "bytes": 24960,
+      "sha256": "857bcf988d155088b250bd05e9b0f77d6282dea12e3640de53d3614a409db8cc"
+    },
+    {
+      "path": "scripts/check_arxiv_readiness.py",
+      "bytes": 4437,
+      "sha256": "b17c259cd68de6c3af13575a3d30c65e93dc67479a8f5857247cbfdd17d6bf79"
+    }
+  ],
+  "derived_files": [
+    {
+      "path": "PAPER.pdf",
+      "bytes": 644666,
+      "sha256": "bb9eb30d8044ba530a40ed270c579995b7fd09126ee7a0903d7fa03c8f740bcc"
+    },
+    {
+      "path": "SUPPLEMENT.pdf",
+      "bytes": 149342,
+      "sha256": "fdd0d75db303c967b4cdca2895e4663cd92d192d04365517c4a999e9a68d4992"
+    },
+    {
+      "path": "manuscript/audience_calibrated_medical_safety_manuscript.docx",
+      "bytes": 512747,
+      "sha256": "9a1738d5f2d42d9b709a628744836b5b86c60e22855daf8a3b7b071724bccbbd"
+    },
+    {
+      "path": "manuscript/audience_calibrated_medical_safety_manuscript.pdf",
+      "bytes": 644666,
+      "sha256": "bb9eb30d8044ba530a40ed270c579995b7fd09126ee7a0903d7fa03c8f740bcc"
+    },
+    {
+      "path": "manuscript/audience_calibrated_medical_safety_medrxiv.docx",
+      "bytes": 512747,
+      "sha256": "9a1738d5f2d42d9b709a628744836b5b86c60e22855daf8a3b7b071724bccbbd"
+    },
+    {
+      "path": "manuscript/audience_calibrated_medical_safety_medrxiv.pdf",
+      "bytes": 644666,
+      "sha256": "6ac5a8b3e3f18a60521128e5dfa708cb1eb1812731e754626d8fa6120ed542bf"
+    },
+    {
+      "path": "manuscript/audience_calibrated_medical_safety_JAMIA.docx",
+      "bytes": 512043,
+      "sha256": "d366f2d51549a858f279e8270ee522ddd666323766ebf587e85a84d933484092"
+    },
+    {
+      "path": "manuscript/audience_calibrated_medical_safety_JAMIA.pdf",
+      "bytes": 663173,
+      "sha256": "a805b9c4c7b3bb26aba3bcd3888ca77b3cad5d477c79665b7f0b39539b901dc1"
+    },
+    {
+      "path": "manuscript/audience_calibrated_medical_safety_supplement.docx",
+      "bytes": 45825,
+      "sha256": "6ba19e02f905a303fa6b217d7833cd6e98ebcb33a79afc5b854e374527c90418"
+    },
+    {
+      "path": "manuscript/audience_calibrated_medical_safety_supplement.pdf",
+      "bytes": 149342,
+      "sha256": "fdd0d75db303c967b4cdca2895e4663cd92d192d04365517c4a999e9a68d4992"
+    },
+    {
+      "path": "ETHICS_SELF_ASSESSMENT.docx",
+      "bytes": 39718,
+      "sha256": "97a68998790ebc9652d873f9e89199fce2fb1d53bfda00aaae597645a3403844"
+    },
+    {
+      "path": "ETHICS_SELF_ASSESSMENT.pdf",
+      "bytes": 58670,
+      "sha256": "53279bc95851680458ac44f46ac6ef4afcb36048653945c11379f2be80db4877"
+    }
+  ]
+}
