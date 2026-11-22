@@ -1,7 +1,15 @@
 name: Build manuscript derivatives
 on:
   push:
-    branches: [preprint-integrity-review-20261121]
+    branches: [arxiv-preprint-polish-20261122]
+    paths:
+      - 'manuscript/manuscript.md'
+      - 'manuscript/supplement.md'
+      - 'manuscript/jamia_abstract.md'
+      - 'PAPER.md'
+      - 'SUPPLEMENT.md'
+      - 'scripts/**'
+      - '.github/workflows/build_manuscript.yml'
   workflow_dispatch:
 permissions:
   contents: write
@@ -24,6 +32,7 @@ jobs:
       - name: Rebuild Word and PDF documents from source Markdown
         run: |
           python scripts/check_document_map.py
+          python scripts/check_arxiv_readiness.py
           python scripts/03_build_documents.py
           libreoffice -env:UserInstallation=file:///tmp/lo-research-build --headless --convert-to pdf --outdir manuscript manuscript/audience_calibrated_medical_safety_manuscript.docx manuscript/audience_calibrated_medical_safety_medrxiv.docx manuscript/audience_calibrated_medical_safety_JAMIA.docx manuscript/audience_calibrated_medical_safety_supplement.docx
           libreoffice -env:UserInstallation=file:///tmp/lo-ethics-build --headless --convert-to pdf --outdir . ETHICS_SELF_ASSESSMENT.docx
@@ -33,11 +42,15 @@ jobs:
           test -s ETHICS_SELF_ASSESSMENT.pdf
           test -s manuscript/audience_calibrated_medical_safety_JAMIA.pdf
           pdftotext PAPER.pdf - | grep -q 'Evaluator specification'
+          python scripts/check_arxiv_readiness.py --pdf
+          python scripts/build_arxiv_release_manifest.py
+          python -m json.tool ARXIV_RELEASE_MANIFEST.json >/dev/null
       - name: Commit refreshed derivatives
+        if: github.ref == 'refs/heads/arxiv-preprint-polish-20261122'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add PAPER.pdf SUPPLEMENT.pdf ETHICS_SELF_ASSESSMENT.docx ETHICS_SELF_ASSESSMENT.pdf manuscript/*.docx manuscript/*.pdf
+          git add PAPER.pdf SUPPLEMENT.pdf ETHICS_SELF_ASSESSMENT.docx ETHICS_SELF_ASSESSMENT.pdf manuscript/*.docx manuscript/*.pdf ARXIV_RELEASE_MANIFEST.json
           if ! git diff --cached --quiet; then
             git commit -m "Rebuild manuscript, supplement and ethics derivatives from audited sources"
             git push origin HEAD:${{ github.ref_name }}
