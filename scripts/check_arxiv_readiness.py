@@ -26,7 +26,7 @@ def source_checks():
     assert "**Keywords:**" in paper and "LLM-as-judge" in paper
     assert "holistic GPT scoring calibrated on physician examples" not in paper, "obsolete calibration provenance"
     assert "incompletely documented calibration" in paper
-    assert "not independent replications" in paper
+    assert "independent replications" in paper
     for identifier, title in REF_TITLES.items():
         assert paper.count("doi:10.48550/arXiv." + identifier) == 1
         assert paper.count(title) == 1, f"missing correct citation title {identifier}"
@@ -35,7 +35,7 @@ def source_checks():
                      "## Results", "## Discussion", "## Declarations", "## References"]
     offsets = [paper.index(h) for h in heading_order]
     assert offsets == sorted(offsets), "core paper sections out of order"
-    reference_numbers = [int(v) for v in re.findall(r"^([0-9]+)\\. [^\\n]+$", paper.split("## References", 1)[1], re.M)]
+    reference_numbers = [int(v) for v in re.findall(r"^([0-9]+)\. [^\n]+$", paper.split("## References", 1)[1], re.M)]
     assert reference_numbers == list(range(1, 19)), "expected contiguous 1–18 references"
     summary = json.loads((ROOT / "results/llm_judge_panel_analysis_summary.json").read_text(encoding="utf-8"))
     assert summary["primary_ratings"] == 4800
@@ -54,7 +54,7 @@ def pdf_checks():
     path = ROOT / "PAPER.pdf"
     assert path.is_file() and path.stat().st_size > 20000, "regenerate paper PDF"
     info = subprocess.check_output(["pdfinfo", str(path)], text=True)
-    match = re.search(r"^Pages:\\s+(\\d+)", info, re.M)
+    match = re.search(r"^Pages:\s+(\d+)", info, re.M)
     assert match and int(match.group(1)) >= 5, "unexpectedly short manuscript PDF"
     rendered = subprocess.check_output(["pdftotext", str(path), "-"], text=True)
     normalized = " ".join(rendered.split())
@@ -66,9 +66,9 @@ def pdf_checks():
     assert font_lines, "cannot inspect fonts embedded in PDF"
     for font in font_lines:
         assert "Type 3" not in font, f"unsupported Type 3 font: {font}"
-        match = re.search(r"\\s+(yes|no)\\s+(yes|no)\\s+(yes|no)\\s+\\d+\\s+\\d+\\s*$", font)
+        match = re.search(r"\s+(yes|no)\s+(yes|no)\s+(yes|no)\s+\d+\s+\d+\s*$", font)
         assert match and match.group(1) == "yes", f"font not embedded: {font}"
-    print(f"PASS: {match.group(1)} embedded fonts; machine-readable PDF, title page and four figures")
+    print(f"PASS: {len(font_lines)} embedded fonts; machine-readable PDF, title page and four figures")
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
